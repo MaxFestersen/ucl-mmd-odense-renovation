@@ -377,7 +377,7 @@ html {
       font-size: 16px; } }
 body {
   background-color: #fafafa;
-  background-image: url("../gfx/pattern-dark@2x.png");
+  background-image: url("../images/pattern-dark@2x.png");
   background-size: 400px;
   background-position: top; }
 body.locked {
@@ -542,7 +542,7 @@ p > a:after, p > a::after {
       padding: 5rem 0; } }
 .row--black {
     background-color: #212125;
-    background-image: url("../gfx/pattern-light@2x.png");
+    background-image: url("../images/pattern-light@2x.png");
     background-size: 400px; }
 .row--black .button--link > svg {
       fill: #1a873a; }
@@ -1022,7 +1022,7 @@ p > a:after, p > a::after {
     transition: all .25s ease-out;
     border-bottom: 1px solid #F2F2F2; }
 .header__bottom.transparent {
-      background-image: url("../gfx/pattern-dark@2x.png");
+      background-image: url("../images/pattern-dark@2x.png");
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: 400px;
@@ -2257,7 +2257,7 @@ p > a:after, p > a::after {
     z-index: 1;
     background: linear-gradient(to bottom, #fafafa 0%, rgba(255, 255, 255, 0) 100%); }
 .footer__img:after {
-    background-image: url("../gfx/pattern-dark@2x.png");
+    background-image: url("../images/pattern-dark@2x.png");
     background-size: 25%;
     content: "";
     width: 100%;
@@ -2458,7 +2458,7 @@ p > a:after, p > a::after {
       left: 0;
       transition: left 0s, opacity .25s .25s ease-out; }
 .mobile-nav:after {
-    background-image: url("../gfx/pattern-dark@2x.png");
+    background-image: url("../images/pattern-dark@2x.png");
     background-position: 0 -80px;
     background-size: 400px;
     content: "";
@@ -3453,4 +3453,3 @@ p > a:after, p > a::after {
     max-height: 3250px;
     max-height: 250rem; }
 
-/*# sourceMappingURL=main.css.map */
