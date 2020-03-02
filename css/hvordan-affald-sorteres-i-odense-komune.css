@@ -6,12 +6,11 @@
 .header figure, .header__bottom figure, .breadcrumb figure, .tiles__list figure, .shortcuts__text figure, .search__inner figure, .footer__info figure {
 	margin: 0;
 }
-
-/* HEADER */
-/* Adding figgure tags to figgures on page, altered display of content. This css is meant to revert visual changes. */
-.header figure, .header figure svg{
+.header figure, .header figure svg, .footer__contact > li > figure, .footer__contact > li > figure > svg, .footer__socials figure, .footer__socials svg{
 	float: left;
 }
+
+/* HEADER */
 .header__logo > figure > svg {
     max-width: 100%;
     max-height: 30px;
