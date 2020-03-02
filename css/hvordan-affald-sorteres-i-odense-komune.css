@@ -1,0 +1,95 @@
+/*Css for index.html */
+/* GENERAL */
+.button:not(.button--round) > figure > svg {
+    margin-right: .5em;
+}
+.header figure, .header__bottom figure, .breadcrumb figure, .tiles__list figure, .shortcuts__text figure, .search__inner figure, .footer__info figure {
+	margin: 0;
+}
+
+/* HEADER */
+/* Adding figgure tags to figgures on page, altered display of content. This css is meant to revert visual changes. */
+.header figure, .header figure svg{
+	float: left;
+}
+.header__logo > figure > svg {
+    max-width: 100%;
+    max-height: 30px;
+    pointer-events: none;
+}
+.header__search > figure > svg{
+	fill: #aaaaaa;
+}
+
+/* BREADCRUMBS */
+.breadcrumb figure{
+	display: inline;
+}
+
+/* BANNER */
+
+/* BANNER DESCRIPTION */
+.hero--alt P {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.875;
+    word-wrap: break-word;
+	font-weight: 400;
+	margin-bottom: auto;
+}
+@media (min-width: 768px){
+	.hero--alt p {
+		font-size: 18px;
+	}
+}
+
+/* RELEATED CONTENT */
+.tiles__item > a > figure > img {
+    width: 100%;
+    height: 165px;
+    margin-bottom: 13px;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    font-family: "object-fit:cover";
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/* SHORTCUTS */
+.shortcuts__img > picture > img{
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+    font-family: "object-fit:cover";
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/* FOOTER SEARCH */
+.search__inner > figure > svg {
+    fill: #cccccc;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    margin-right: 16.25px;
+    margin-right: 1.25rem;
+    max-width: 14.3px;
+    max-width: 1.1rem;
+    transition: fill 300ms ease-out;
+}
+
+/* FOOTER INFORMATION */
+.footer__logo > figure > svg {
+    height: 18px;
+    width: 200px;
+    max-height: none;
+    max-height: initial;
+    max-width: none;
+    max-width: initial;
+}
+.footer__contact > li > figure > svg {
+    margin-right: 6.5px;
+    margin-right: .5rem;
+    fill: #aaaaaa;
+    width: 20px;
+}
