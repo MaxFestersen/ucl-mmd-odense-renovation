@@ -1,4 +1,14 @@
 /*Css for index.html */
+
+/* Colors ---
+madaffald: 038f39
+restaffald: 262626
+glas: 54b6a9
+metal 444444
+papir 3f7abc
+småt pap e0c495
+*/
+
 /* GENERAL */
 /* Make semantiv tags usable in ie 8 and bellow. */
 article, header, nav, section, footer {
@@ -111,7 +121,34 @@ hr{
 	float: left;
 	width: 100%; /* 100% of grid item, is 25% of screen. */
 	height: 25vw; /* 25vw is 25% of screen height. */
+	color: #FFF;
+}
+.sort-item-card:hover {
+	color: #FFF;
+}
+#madaffald-card .sort-item-card {
+	background-color: #038f39;
+}
+#restaffald-card .sort-item-card {
+	background-color: #262626;
+}
+#glas-card .sort-item-card {
+	background-color: #54b6a9;
+}
+#metal-card .sort-item-card {
+	background-color: #444444;
+}
+#papir-card .sort-item-card {
+	background-color: #3f7abc;
+}
+#smaat-pap-card .sort-item-card {
+	background-color: #e0c495;
+}
+#plast-card .sort-item-card {
 	background-color: #f00;
+}
+#oevrigt-card .sort-item-card {
+	background-color: #00f;
 }
 .sort-item-card img{
 	/* center that thing!! */
@@ -127,31 +164,60 @@ hr{
 #static_main_section article {
 	float:left;
 	width: 100%;
-}
-.static_content_title:after, .static_content_title:before {
-	background-color: #f00;	
-	z-index: -1;
+	margin-bottom: 50px;
 }
 .static_content_title {
 	position: relative;
 	float: left;
 	width: 100%;
-	clear: both;
+	margin-bottom: 20px;
 	z-index: 100;
 }
-.static_content_title:after {
+.static_content_title:after, .static_content_title:before {
 	content: "";
 	position: absolute;
 	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.static_content_title:after {
 	width: 25vw;
 	height: 100%;
 }
 .static_content_title:before {
-	content: "";
-	position: absolute;
-	top: 0;
 	height: 25%;
 	width: 100vw;
+}
+#madaffald .static_content_title:after, #madaffald .static_content_title:before{
+	background-color: #038f39;	
+}
+#restaffald .static_content_title:after, #restaffald .static_content_title:before{
+	background-color: #262626;	
+}
+#glas .static_content_title:after, #glas .static_content_title:before{
+	background-color: #54b6a9;	
+}
+#metal .static_content_title:after, #metal .static_content_title:before{
+	background-color: #444444;	
+}
+#papir .static_content_title:after, #papir .static_content_title:before{
+	background-color: #3f7abc;	
+}
+#smaat-pap .static_content_title:after, #smaat-pap .static_content_title:before{
+	background-color: #e0c495;	
+}
+#plast .static_content_title:after, #plast .static_content_title:before{
+	background-color: #f00;	
+}
+#oevrigt .static_content_title:after, #oevrigt .static_content_title:before{
+	background-color: #00f;	
+}
+.static_content_title figure, .static_content_title h2 {
+	float:left;
+}
+.static_content_title h2 {
+	color: #FFF;
+	padding-left: 5px;
 }
 .static_content_content {
 	float: left;
