@@ -93,6 +93,10 @@ hr{
 /* INTERACTIVE MAIN CONTENT */
 #interactive_main_content figure {
 	float: left;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 .sort-item-display{
 	float: left;
@@ -123,8 +127,17 @@ hr{
 	height: 25vw; /* 25vw is 25% of screen height. */
 	color: #FFF;
 }
-.sort-item-card:hover {
+.sort-item-card:hover, .sort-item-card:active, .sort-item-card:focus {
 	color: #FFF;
+}
+.sort-item-card figure {
+	width:100%;
+	height:auto;
+}
+.sort-item-card figure svg {
+	max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
 }
 #madaffald-card .sort-item-card {
 	background-color: #038f39;
@@ -151,11 +164,11 @@ hr{
 	background-color: #00f;
 }
 .sort-item-card img{
-	/* center that thing!! */
+    max-width: 50%;
 }
 .sort-item-card span {
 	position: absolute;
-	bottom: 0;
+	bottom: 6vw;
 	width: 100%;
 	text-align: center;
 }
@@ -170,6 +183,7 @@ hr{
 	position: relative;
 	float: left;
 	width: 100%;
+	padding: 10px 0;
 	margin-bottom: 20px;
 	z-index: 100;
 }
@@ -215,22 +229,42 @@ hr{
 .static_content_title figure, .static_content_title h2 {
 	float:left;
 }
+.static_content_title figure {
+	max-height: 100px;
+}
+.static_content_title figure img {
+	float: left;
+	height: 70px;
+}
 .static_content_title h2 {
 	color: #FFF;
 	padding-left: 5px;
+	line-height: 70px;
 }
 .static_content_content {
+	position: relative;
 	float: left;
 	width: 100%;
 }
-.examples_of_what_to_do_title{
+.what_to_do_with, .examples_of_what_to_do {
+	width: calc(50% - 2rem);
+	margin: 0;
+	z-index: 100;
+}
+.what_to_do_with {
 	float: left;
 }
-#static_main_section article ul{
-	float: left;
+.examples_of_what_to_do, .examples_of_what_to_do_title {
+	float: right;
+	clear: right;
+}
+ul.what_to_do_with li a, ul.examples_of_what_to_do li a {
+	display: inline-flex;
+	padding: 0 !important;
+}
+.examples_of_what_to_do_title{
 	width: 50%;
-	margin: 0;
-	z-index:100;
+	font-weight: 700;
 }
 
 /* FOOTER SEARCH */
