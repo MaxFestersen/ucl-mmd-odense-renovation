@@ -7,18 +7,17 @@ article, header, nav, section, footer {
 .button:not(.button--round) > figure > svg {
     margin-right: .5em;
 }
-.header figure, .header__bottom figure, .breadcrumb figure, .tiles__list figure, .shortcuts__text figure, .search__inner figure, .footer__info figure, #interactive_main_content figure {
+hr{
+	margin: 10vh 0;
+}
+.header figure, .header__bottom figure, .breadcrumb figure, .tiles__list figure, .shortcuts__text figure, .search__inner figure, .footer__info figure, #interactive_main_content figure, #static_main_section figure {
 	margin: 0;
 }
 .header figure, .header figure svg, .footer__contact > li > figure, .footer__contact > li > figure > svg, .footer__socials figure, .footer__socials svg{
 	float: left;
 }
 .hidden{
-	width: 0;
-	height: 0;
-}
-.sort-item-display{
-	overflow: hidden;
+	height: 0 !important;
 }
 .h2-like {
 	display: block;
@@ -81,9 +80,91 @@ article, header, nav, section, footer {
 
 /* MAIN CONTENT */
 
-/* NTERACTIVE MAIN CONTENT */
+/* INTERACTIVE MAIN CONTENT */
 #interactive_main_content figure {
 	float: left;
+}
+.sort-item-display{
+	float: left;
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+.sort-item-display.hidden a, .sort-item-display.hidden div{
+	display: none;
+}
+.grid-sort-card{
+    float: left;
+    width: 100%;
+    display: grid;
+    grid-template: auto/25% 25% 25% 25%;
+    justify-content: center;
+    grid-row-gap: 0;
+}
+.grid-item {
+	float: left;
+	width: auto;
+	height: auto;
+}
+.sort-item-card {
+	position: relative;
+	float: left;
+	width: 100%; /* 100% of grid item, is 25% of screen. */
+	height: 25vw; /* 25vw is 25% of screen height. */
+	background-color: #f00;
+}
+.sort-item-card img{
+	/* center that thing!! */
+}
+.sort-item-card span {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+/* STATIC MAIN CONTENT */
+#static_main_section article {
+	float:left;
+	width: 100%;
+}
+.static_content_title:after, .static_content_title:before {
+	background-color: #f00;	
+	z-index: -1;
+}
+.static_content_title {
+	position: relative;
+	float: left;
+	width: 100%;
+	clear: both;
+	z-index: 100;
+}
+.static_content_title:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 25vw;
+	height: 100%;
+}
+.static_content_title:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	height: 25%;
+	width: 100vw;
+}
+.static_content_content {
+	float: left;
+	width: 100%;
+}
+.examples_of_what_to_do_title{
+	float: left;
+}
+#static_main_section article ul{
+	float: left;
+	width: 50%;
+	margin: 0;
+	z-index:100;
 }
 
 /* FOOTER SEARCH */
