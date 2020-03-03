@@ -1,5 +1,9 @@
 /*Css for index.html */
 /* GENERAL */
+/* Make semantiv tags usable in ie 8 and bellow. */
+article, header, nav, section, footer {
+   display:block;
+}
 .button:not(.button--round) > figure > svg {
     margin-right: .5em;
 }
