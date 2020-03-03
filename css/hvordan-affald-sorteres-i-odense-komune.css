@@ -7,13 +7,24 @@ article, header, nav, section, footer {
 .button:not(.button--round) > figure > svg {
     margin-right: .5em;
 }
-.header figure, .header__bottom figure, .breadcrumb figure, .tiles__list figure, .shortcuts__text figure, .search__inner figure, .footer__info figure {
+.header figure, .header__bottom figure, .breadcrumb figure, .tiles__list figure, .shortcuts__text figure, .search__inner figure, .footer__info figure, #interactive_main_content figure {
 	margin: 0;
 }
 .header figure, .header figure svg, .footer__contact > li > figure, .footer__contact > li > figure > svg, .footer__socials figure, .footer__socials svg{
 	float: left;
 }
-
+.hidden{
+	width: 0;
+	height: 0;
+}
+.sort-item-display{
+	overflow: hidden;
+}
+.h2-like {
+	display: block;
+    font-size: 1.5em;
+	font-weight: 400;
+}
 /* HEADER */
 .header__logo > figure > svg {
     max-width: 100%;
@@ -66,6 +77,13 @@ article, header, nav, section, footer {
     font-family: "object-fit:cover";
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+/* MAIN CONTENT */
+
+/* NTERACTIVE MAIN CONTENT */
+#interactive_main_content figure {
+	float: left;
 }
 
 /* FOOTER SEARCH */
