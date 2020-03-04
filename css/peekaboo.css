@@ -1,0 +1,15 @@
+body {
+    background-image: url(../images/screencapture-odenserenovation-dk-2020-03-04-12_27_59.png);
+    background-size: cover;
+}
+
+#peekaboo {
+    position: fixed;
+    bottom: 0px;
+    right: -352;
+    background: #c4e6ff;
+    padding: 25px;
+    width: 300px;
+    height: 200px;
+    font-size: 48px;
+}
