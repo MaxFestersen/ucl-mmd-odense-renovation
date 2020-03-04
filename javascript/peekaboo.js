@@ -3,11 +3,11 @@ function yScrollHandler() {
     var win = document.getElementById("peekaboo");
     if ((window.pageYOffset + window.innerHeight) >= document.body.offsetHeight) {
         //win.style.webkitTransition = "right 0.7s ease-in-out 0s";
-        win.style.transition = "right 0.7s ease-in-out 0s";
+        win.style.transition = "right 0.2s ease-in-out 0s";
         win.style.left = "0px";
     } else {
-        win.style.transition = "right 0.7s ease-in-out 0s";
-        win.style.left = "-345px";
+        win.style.transition = "right 0.2s ease-in-out 0s";
+        win.style.left = "-852px";
     }
 }
 window.onscroll = yScrollHandler;
