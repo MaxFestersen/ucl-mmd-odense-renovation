@@ -33,7 +33,7 @@ function hideAndSave() {
 	d.setTime(d.getTime() + (720*24*60*60*1000));
 	var expires = "expires="+ d.toUTCString();
 	document.cookie = "studieopgave_oplysning" + "=" + 1 + ";" + expires + ";path=/";
-	studieopgave_oplysning.style.display='none';
+	studieopgave_oplysning.style.display = 'none';
 	console.log('cookie is saved.')
 }
 

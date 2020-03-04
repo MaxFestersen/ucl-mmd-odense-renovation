@@ -2,15 +2,30 @@ body {
     background-image: url(../images/screencapture-odenserenovation-dk-2020-03-04-12_27_59.png);
     background-size: cover;
     height: 110vh;
+    font-family: "adelle-sans";
+    /* 10 ekstra i højde for at give scrolling mulighed*/
 }
 
 #peekaboo {
     position: fixed;
     bottom: 0px;
-    right: -352;
-    background: #c4e6ff;
+    left: -852;
+    background: #FEFAE1;
     padding: 25px;
-    width: 300px;
-    height: 200px;
-    font-size: 48px;
+    width: 550px;
+    height: 150px;
+    border: solid 5px #1D672D;
+    border-top-right-radius: 6px;
+}
+
+.linje_et {
+    font-size: 60px;
+}
+
+.linje_to {
+    font-size: 50px;
+}
+
+.linje_tre {
+    font-size: 30px;
 }
