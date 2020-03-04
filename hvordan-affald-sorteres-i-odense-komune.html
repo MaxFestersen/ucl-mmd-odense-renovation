@@ -198,7 +198,7 @@
     <!-- BANNER -->
     <!-- Alert om studieopgave -->
     <div id="studieopgave_oplysning" class="alert">
-        <span id="studieopgave_oplysning_closebth" class="closebtn" title="Bekræft du har set notifikationen, og gem en cookie, så siden husker det.">&times;</span> 
+        <span id="studieopgave_oplysning_closebth" class="closebtn" title="Bekræft du har set notifikationen, og gem en cookie, så siden husker det.">&times;</span>
 		<span class="h2-like">Dette er en studieopgave og er derfor kun til studiebrug!</span>
     </div>
     <div class="wrapper">
@@ -249,32 +249,16 @@
                                     <figure>
                                         <img src="images/placeholder.svg" alt="" />
                                     </figure>
-                                    <span class="h2-like">MADAFFALD</span>
+                                    <span class="h2-like"></span>
                                 </div>
-                                <div class="static_content_content">
-                                    <ul class="what_to_do_with">
-                                        <li>Madaffald skal i skraldespanden med dette ikon.</li>
-                                        <li>Madaffald skal sorteres i poser - husk knude på posen.</li>
-                                        <li>Madaffald omdannes til biogas, som bruges til produktion af el, varme eller brændstof.</li>
-                                        <li>Madaffald består kun af fødevarer uden emballage</li>
-                                    </ul>
-                                    <span class="examples_of_what_to_do_title">Eksempler på madaffald</span>
-                                    <ul class="examples_of_what_to_do">
-                                        <li>Ris, pasta og ost</li>
-                                        <li>Grøntsager og frugt</li>
-                                        <li>Teblade og kaffegrums (også m. filtre og poser)</li>
-                                        <li>Fisk, kød pålæg og ben</li>
-                                        <li>Brød og kager</li>
-                                        <li>Sovs og fedt</li>
-                                    </ul>
-                                </div>
+                                <div class="static_content_content"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="grid-sort-card">
                     <div id="madaffald-card" class="grid-item">
-                        <a href="#top-display" class="sort-item-card" onclick="">
+                        <a id="madaffald-button" href="#top-display" class="sort-item-card" onclick="fuck(color = '#038f39')">
                             <figure>
                                 <img src="images/placeholder.svg" alt="" />
                             </figure>
@@ -282,7 +266,7 @@
                         </a>
                     </div>
                     <div id="restaffald-card" class="grid-item">
-                        <a href="#top-display" class="sort-item-card" onclick="">
+                        <a id="restaffald-button" href="#top-display" class="sort-item-card" onclick="fuck(color = '#262626')">
                             <figure>
                                 <img src="images/placeholder.svg" alt="" />
                             </figure>
@@ -290,7 +274,7 @@
                         </a>
                     </div>
                     <div id="glas-card" class="grid-item">
-                        <a href="#top-display" class="sort-item-card" onclick="">
+                        <a id="glas-button" href="#top-display" class="sort-item-card" onclick="fuck(color = '#54b6a9')">
                             <figure>
                                 <img src="images/placeholder.svg" alt="" />
                             </figure>
@@ -298,7 +282,7 @@
                         </a>
                     </div>
                     <div id="metal-card" class="grid-item">
-                        <a href="#top-display" class="sort-item-card" onclick="">
+                        <a id="metal-button" href="#top-display" class="sort-item-card" onclick="fuck(color = '#444444')">
                             <figure>
                                 <img src="images/placeholder.svg" alt="" />
                             </figure>
@@ -839,7 +823,7 @@
     <!-- New Javascript file. -->
     <script src="javascript/semantic-backwards-compability.js"></script>
     <script src="javascript/allert_student_info.js"></script>
-    <script src="javascript/placeholder"></script>
+    <script src="javascript/sorteringsguide-menu.js"></script>
     <!-- Orriginal, unaltered js-files and code. -->
     <script src="javascript/ga.js.download" type="text/javascript" />
     <script type="text/javascript">

@@ -81,6 +81,11 @@ hr {
 }
 
 
+/* NAVIGATION */
+.header__nav li:first-child a.header__nav__item:before {
+    -webkit-transform: translateY(0) !important;
+    transform: translateY(0) !important;}
+
 /* BREADCRUMBS */
 
 .breadcrumb figure {
