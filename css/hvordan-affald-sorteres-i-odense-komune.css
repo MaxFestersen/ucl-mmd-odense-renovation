@@ -1,5 +1,6 @@
 /*Css for index.html */
 
+
 /* Colors ---
 madaffald: 038f39
 restaffald: 262626
@@ -9,68 +10,108 @@ papir 3f7abc
 småt pap e0c495
 */
 
+
 /* GENERAL */
+
+
 /* Make semantiv tags usable in ie 8 and bellow. */
-article, header, nav, section, footer {
-   display:block;
+
+article,
+header,
+nav,
+section,
+footer {
+    display: block;
 }
-.button:not(.button--round) > figure > svg {
+
+.button:not(.button--round)>figure>svg {
     margin-right: .5em;
 }
-hr{
-	margin: 10vh 0;
+
+hr {
+    margin: 10vh 0;
 }
-.header figure, .header__bottom figure, .breadcrumb figure, .tiles__list figure, .shortcuts__text figure, .search__inner figure, .footer__info figure, #interactive_main_content figure, #static_main_section figure {
-	margin: 0;
+
+.header figure,
+.header__bottom figure,
+.breadcrumb figure,
+.tiles__list figure,
+.shortcuts__text figure,
+.search__inner figure,
+.footer__info figure,
+#interactive_main_content figure,
+#static_main_section figure {
+    margin: 0;
 }
-.header figure, .header figure svg, .footer__contact > li > figure, .footer__contact > li > figure > svg, .footer__socials figure, .footer__socials svg{
-	float: left;
+
+.header figure,
+.header figure svg,
+.footer__contact>li>figure,
+.footer__contact>li>figure>svg,
+.footer__socials figure,
+.footer__socials svg {
+    float: left;
 }
-.hidden{
-	height: 0 !important;
+
+.hidden {
+    height: 0 !important;
 }
+
 .h2-like {
-	display: block;
+    display: block;
     font-size: 1.5em;
-	font-weight: 400;
+    font-weight: 400;
 }
-.positionerer{
-	position: relative;
+
+.positionerer {
+    position: relative;
 }
+
+
 /* HEADER */
-.header__logo > figure > svg {
+
+.header__logo>figure>svg {
     max-width: 100%;
     max-height: 30px;
     pointer-events: none;
 }
-.header__search > figure > svg{
-	fill: #aaaaaa;
+
+.header__search>figure>svg {
+    fill: #aaaaaa;
 }
 
+
 /* BREADCRUMBS */
-.breadcrumb figure{
-	display: inline;
+
+.breadcrumb figure {
+    display: inline;
 }
+
 
 /* BANNER */
 
+
 /* BANNER DESCRIPTION */
+
 .hero--alt P {
     color: #444;
     font-size: 16px;
     line-height: 1.875;
     word-wrap: break-word;
-	font-weight: 400;
-	margin-bottom: auto;
-}
-@media (min-width: 768px){
-	.hero--alt p {
-		font-size: 18px;
-	}
+    font-weight: 400;
+    margin-bottom: auto;
 }
 
+@media (min-width: 768px) {
+    .hero--alt p {
+        font-size: 18px;
+    }
+}
+
+
 /* RELEATED CONTENT */
-.tiles__item > a > figure > img {
+
+.tiles__item>a>figure>img {
     width: 100%;
     height: 165px;
     margin-bottom: 13px;
@@ -81,8 +122,10 @@ hr{
     object-fit: cover;
 }
 
+
 /* SHORTCUTS */
-.shortcuts__img > picture > img {
+
+.shortcuts__img>picture>img {
     border-radius: 2px;
     width: 100%;
     height: 100%;
@@ -91,64 +134,87 @@ hr{
     object-fit: cover;
 }
 
+
 /* MAIN CONTENT */
 
+
 /* INTERACTIVE MAIN CONTENT */
+
 #interactive_main_content figure {
-	float: left;
+    float: left;
     align-items: center;
     display: flex;
     justify-content: center;
     height: 100%;
-	clear: right;
+    clear: right;
 }
+
 .sort-item-display {
-	position: relative;
-	overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
-#top-display, #bottom-display, .positionerer {
-	float: left;
-	width: 100%;
+
+#top-display,
+#bottom-display,
+.positionerer {
+    float: left;
+    width: 100%;
 }
-#top-display, #bottom-display {
-	background-color: #444;
+
+#top-display,
+#bottom-display {
+    background-color: #444;
 }
+
 #top-display .positionerer {
-	padding-top: 30px;
-	padding-bottom: 70px;
+    padding-top: 30px;
+    padding-bottom: 70px;
 }
+
 #bottom-display .positionerer {
-	padding-top: 30px;
-	padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 100px;
 }
+
 #top-display .close_button,
 #bottom-display .close_button {
-	position: absolute;
-	right: 0;
-	z-index: 101;
-	cursor: pointer;
-	color: #FFF;
+    position: absolute;
+    right: 0;
+    z-index: 101;
+    cursor: pointer;
+    color: #FFF;
 }
+
 #top-display .h2-like,
 #bottom-display .h2-like {
-	color: #FFF;
-	clear: both;
+    color: #FFF;
+    clear: both;
 }
-#top-display ul.what_to_do_with li, #top-display .examples_of_what_to_do_title, #top-display ul.examples_of_what_to_do li,
-#bottom-display ul.what_to_do_with li, #bottom-display .examples_of_what_to_do_title, #bottom-display ul.examples_of_what_to_do li {
-	color: #FFF;
+
+#top-display ul.what_to_do_with li,
+#top-display .examples_of_what_to_do_title,
+#top-display ul.examples_of_what_to_do li,
+#bottom-display ul.what_to_do_with li,
+#bottom-display .examples_of_what_to_do_title,
+#bottom-display ul.examples_of_what_to_do li {
+    color: #FFF;
 }
+
 #top-display .content__inner ul li:before,
 #bottom-display .content__inner ul li:before {
-	background-color: #FFF;
+    background-color: #FFF;
 }
+
 .sort-item-display .content__inner {
-	max-width: none;
+    max-width: none;
 }
-.sort-item-display.hidden a, .sort-item-display.hidden div{
-	display: none;
+
+.sort-item-display.hidden a,
+.sort-item-display.hidden div {
+    display: none;
 }
-.grid-sort-card{
+
+.grid-sort-card {
     float: left;
     width: 100%;
     display: grid;
@@ -156,160 +222,218 @@ hr{
     justify-content: center;
     grid-row-gap: 0;
 }
+
 .grid-item {
-	float: left;
-	width: auto;
-	height: auto;
+    float: left;
+    width: auto;
+    height: auto;
 }
+
 .sort-item-card {
-	position: relative;
-	float: left;
-	width: 100%; /* 100% of grid item, is 25% of screen. */
-	height: 25vw; /* 25vw is 25% of screen height. */
-	color: #FFF;
+    position: relative;
+    float: left;
+    width: 100%;
+    /* 100% of grid item, is 25% of screen. */
+    height: 25vw;
+    /* 25vw is 25% of screen height. */
+    color: #FFF;
 }
-.sort-item-card:hover, .sort-item-card:active, .sort-item-card:focus {
-	color: #FFF;
+
+.sort-item-card:hover,
+.sort-item-card:active,
+.sort-item-card:focus {
+    color: #FFF;
 }
+
 .sort-item-card figure {
-	width:100%;
-	height:auto;
+    width: 100%;
+    height: auto;
 }
+
 .sort-item-card figure svg {
-	max-width: 100%;
+    max-width: 100%;
     max-height: 100%;
     pointer-events: none;
 }
+
 #madaffald-card .sort-item-card {
-	background-color: #038f39;
+    background-color: #038f39;
 }
+
 #restaffald-card .sort-item-card {
-	background-color: #262626;
+    background-color: #262626;
 }
+
 #glas-card .sort-item-card {
-	background-color: #54b6a9;
+    background-color: #54b6a9;
 }
+
 #metal-card .sort-item-card {
-	background-color: #444444;
+    background-color: #444444;
 }
+
 #papir-card .sort-item-card {
-	background-color: #3f7abc;
+    background-color: #3f7abc;
 }
+
 #smaat-pap-card .sort-item-card {
-	background-color: #e0c495;
+    background-color: #e0c495;
 }
+
 #plast-card .sort-item-card {
-	background-color: #f00;
+    background-color: #f00;
 }
+
 #oevrigt-card .sort-item-card {
-	background-color: #00f;
+    background-color: #00f;
 }
-.sort-item-card img{
+
+.sort-item-card img {
     max-width: 50%;
 }
+
 .sort-item-card span {
-	position: absolute;
-	bottom: 6vw;
-	width: 100%;
-	text-align: center;
+    position: absolute;
+    bottom: 6vw;
+    width: 100%;
+    text-align: center;
 }
+
 
 /* STATIC MAIN CONTENT */
+
 #static_main_section article {
-	float:left;
-	width: 100%;
-	margin-bottom: 50px;
-}
-#static_main_section .static_content_title {
-	position: relative;
-	float: left;
-	width: 100%;
-	padding: 10px 0;
-	margin-bottom: 20px;
-	z-index: 100;
-}
-#static_main_section .static_content_title:after, #static_main_section .static_content_title:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-}
-#static_main_section .static_content_title:after {
-	width: 25vw;
-	height: 100%;
-}
-#static_main_section .static_content_title:before {
-	height: 25%;
-	width: 100vw;
-}
-#madaffald .static_content_title:after, #madaffald .static_content_title:before{
-	background-color: #038f39;	
-}
-#restaffald .static_content_title:after, #restaffald .static_content_title:before{
-	background-color: #262626;	
-}
-#glas .static_content_title:after, #glas .static_content_title:before{
-	background-color: #54b6a9;	
-}
-#metal .static_content_title:after, #metal .static_content_title:before{
-	background-color: #444444;	
-}
-#papir .static_content_title:after, #papir .static_content_title:before{
-	background-color: #3f7abc;	
-}
-#smaat-pap .static_content_title:after, #smaat-pap .static_content_title:before{
-	background-color: #e0c495;	
-}
-#plast .static_content_title:after, #plast .static_content_title:before{
-	background-color: #f00;	
-}
-#oevrigt .static_content_title:after, #oevrigt .static_content_title:before{
-	background-color: #00f;	
-}
-.static_content_title figure, .static_content_title h2 {
-	float:left;
-}
-.static_content_title figure {
-	max-height: 100px;
-}
-.static_content_title figure img {
-	float: left;
-	height: 70px;
-}
-.static_content_title h2 {
-	color: #FFF;
-	padding-left: 5px;
-	line-height: 70px;
-}
-.static_content_content {
-	position: relative;
-	float: left;
-	width: 100%;
-}
-.what_to_do_with, .examples_of_what_to_do {
-	width: calc(50% - 2rem);
-	margin: 0;
-	z-index: 100;
-}
-.what_to_do_with {
-	float: left;
-}
-.examples_of_what_to_do, .examples_of_what_to_do_title {
-	float: right;
-	clear: right;
-}
-ul.what_to_do_with li a, ul.examples_of_what_to_do li a {
-	display: inline-flex;
-	padding: 0 !important;
-}
-.examples_of_what_to_do_title{
-	width: 50%;
-	font-weight: 700;
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
+#static_main_section .static_content_title {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
+#static_main_section .static_content_title:after,
+#static_main_section .static_content_title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#static_main_section .static_content_title:after {
+    width: 25vw;
+    height: 100%;
+}
+
+#static_main_section .static_content_title:before {
+    height: 25%;
+    width: 100vw;
+}
+
+#madaffald .static_content_title:after,
+#madaffald .static_content_title:before {
+    background-color: #038f39;
+}
+
+#restaffald .static_content_title:after,
+#restaffald .static_content_title:before {
+    background-color: #262626;
+}
+
+#glas .static_content_title:after,
+#glas .static_content_title:before {
+    background-color: #54b6a9;
+}
+
+#metal .static_content_title:after,
+#metal .static_content_title:before {
+    background-color: #444444;
+}
+
+#papir .static_content_title:after,
+#papir .static_content_title:before {
+    background-color: #3f7abc;
+}
+
+#smaat-pap .static_content_title:after,
+#smaat-pap .static_content_title:before {
+    background-color: #e0c495;
+}
+
+#plast .static_content_title:after,
+#plast .static_content_title:before {
+    background-color: #f00;
+}
+
+#oevrigt .static_content_title:after,
+#oevrigt .static_content_title:before {
+    background-color: #00f;
+}
+
+.static_content_title figure,
+.static_content_title h2 {
+    float: left;
+}
+
+.static_content_title figure {
+    max-height: 100px;
+}
+
+.static_content_title figure img {
+    float: left;
+    height: 70px;
+}
+
+.static_content_title h2 {
+    color: #FFF;
+    padding-left: 5px;
+    line-height: 70px;
+}
+
+.static_content_content {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.what_to_do_with,
+.examples_of_what_to_do {
+    width: calc(50% - 2rem);
+    margin: 0;
+    z-index: 100;
+}
+
+.what_to_do_with {
+    float: left;
+}
+
+.examples_of_what_to_do,
+.examples_of_what_to_do_title {
+    float: right;
+    clear: right;
+}
+
+ul.what_to_do_with li a,
+ul.examples_of_what_to_do li a {
+    display: inline-flex;
+    padding: 0 !important;
+}
+
+.examples_of_what_to_do_title {
+    width: 50%;
+    font-weight: 700;
+}
+
+
 /* FOOTER SEARCH */
-.search__inner > figure > svg {
+
+.search__inner>figure>svg {
     fill: #cccccc;
     -webkit-box-ordinal-group: 1;
     -ms-flex-order: 0;
@@ -321,8 +445,10 @@ ul.what_to_do_with li a, ul.examples_of_what_to_do li a {
     transition: fill 300ms ease-out;
 }
 
+
 /* FOOTER INFORMATION */
-.footer__logo > figure > svg {
+
+.footer__logo>figure>svg {
     height: 18px;
     width: 200px;
     max-height: none;
@@ -330,34 +456,43 @@ ul.what_to_do_with li a, ul.examples_of_what_to_do li a {
     max-width: none;
     max-width: initial;
 }
-.footer__contact > li > figure > svg {
+
+.footer__contact>li>figure>svg {
     margin-right: 6.5px;
     margin-right: .5rem;
     fill: #aaaaaa;
     width: 20px;
 }
+
+
 /* The alert message box */
+
 .alert {
-  padding: 20px;
-  padding-left: 500px;
-  background-color: #f44336; /* Red */
-  color: white;
-  margin-bottom: 15px;
+    padding: 20px;
+    padding-left: 500px;
+    background-color: #f44336;
+    /* Red */
+    color: white;
+    margin-bottom: 15px;
 }
+
 
 /* The close button */
+
 .closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+
 /* When moving the mouse over the close button */
+
 .closebtn:hover {
-  font-size: 28px;
+    font-size: 28px;
 }
