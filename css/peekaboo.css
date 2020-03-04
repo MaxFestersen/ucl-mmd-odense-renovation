@@ -5,6 +5,7 @@ body {
     /* 10 ekstra i højde for at give scrolling mulighed*/
 }
 
+font-family: "adelle-sans";
 #peekaboo {
     position: fixed;
     bottom: 0px;
