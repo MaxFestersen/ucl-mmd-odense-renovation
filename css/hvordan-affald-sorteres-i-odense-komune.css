@@ -474,7 +474,9 @@ ul.examples_of_what_to_do li a {
     color: white;
     margin-bottom: 15px;
 }
-
+.alert span {
+	display: inline;
+}
 
 /* The close button */
 
