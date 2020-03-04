@@ -34,6 +34,9 @@ hr{
     font-size: 1.5em;
 	font-weight: 400;
 }
+.positionerer{
+	position: relative;
+}
 /* HEADER */
 .header__logo > figure > svg {
     max-width: 100%;
@@ -103,17 +106,24 @@ hr{
 	position: relative;
 	overflow: hidden;
 }
-#top-display {
+#top-display, #bottom-display, .positionerer {
+	float: left;
+	width: 100%;
+}
+#top-display, #bottom-display {
+	background-color: #444;
+}
+#top-display .positionerer {
 	padding-top: 30px;
-	padding-bottom: 20px;
+	padding-bottom: 70px;
 }
-#bottom-display {
-	padding-top: 20px;
-	padding-bottom: 30px;
+#bottom-display .positionerer {
+	padding-top: 30px;
+	padding-bottom: 100px;
 }
-#top-display .close_button {
+#top-display .close_button,
+#bottom-display .close_button {
 	position: absolute;
-	top: 0;
 	right: 0;
 	z-index: 101;
 	cursor: pointer;
