@@ -3,9 +3,11 @@ body {
     background-size: cover;
     height: 110vh;
     /* 10 ekstra i højde for at give scrolling mulighed*/
+	font-family: adelle, serif;
+	font-style: normal;
+	font-weight: 600;
 }
 
-font-family: "adelle-sans";
 #peekaboo {
     position: fixed;
     bottom: 0px;
