@@ -2,10 +2,8 @@ body {
     background-image: url(../images/screencapture-odenserenovation-dk-2020-03-04-12_27_59.png);
     background-size: cover;
     height: 110vh;
+    font-family: "adelle-sans";
     /* 10 ekstra i højde for at give scrolling mulighed*/
-	font-family: adelle, serif;
-	font-style: normal;
-	font-weight: 600;
 }
 
 #peekaboo {
@@ -16,6 +14,8 @@ body {
     padding: 25px;
     width: 550px;
     height: 150px;
+    border: solid 5px #1D672D;
+    border-top-right-radius: 6px;
 }
 
 .linje_et {
