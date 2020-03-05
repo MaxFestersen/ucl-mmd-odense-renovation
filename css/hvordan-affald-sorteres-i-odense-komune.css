@@ -408,6 +408,7 @@ hr {
 }
 
 .static_content_title h2 {
+	margin-left: 10px;
     color: #FFF;
     line-height: 70px;
 }
