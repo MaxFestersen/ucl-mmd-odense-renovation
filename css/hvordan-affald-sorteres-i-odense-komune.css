@@ -196,6 +196,13 @@ hr {
     z-index: 101;
     cursor: pointer;
     color: #FFF;
+    transition: font-size 0.3s, line-height 0.2s;
+}
+
+#top-display .close_button:hover,
+#bottom-display .close_button:hover {
+	font-size: 35px;
+	line-height: 35px;
 }
 
 @media (min-width: 768px) {
@@ -203,6 +210,11 @@ hr {
 	#bottom-display .close_button {
 		font-size: 50px;
 		line-height: 50px;
+	}
+	#top-display .close_button:hover,
+	#bottom-display .close_button:hover {
+		font-size: 55px;
+		line-height: 55px;
 	}
 }
 
