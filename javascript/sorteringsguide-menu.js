@@ -11,8 +11,19 @@ var Glas_button = document.getElementById("glas-button");
 var Glas_button = document.getElementById("metal-button");
   //MADAFFALD onclick remove "display: hidden"
   //MADAFFALD  onlick "close" add "display hidden"
-
-
+function hideTopdisplay(){
+  top_display.classList.add("hidden");
+}
+//On esc press//
+console.log("test")
+document.addEventListner("keyup", event=> {
+  const key = event.key.toLowerCase();
+  console.log("prøve")
+  if(key=="escape"){
+    console.log("hideTopdisplay")
+    hideTopdisplay();
+  }
+});
 
 //Indsæt linje med forklaring og eksempel
 
