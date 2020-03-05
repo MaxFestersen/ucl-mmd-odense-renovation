@@ -421,19 +421,29 @@ hr {
 
 .what_to_do_with,
 .examples_of_what_to_do {
-    width: calc(50% - 2rem);
-    margin: 0;
+	width: 100%;
+    float: left;
     z-index: 100;
 }
 
-.what_to_do_with {
-    float: left;
-}
+@media (min-width: 768px) {
+	.what_to_do_with,
+	.examples_of_what_to_do {
+		width: calc(50% - 4rem);
+		z-index: 100;
+	}
+	
+	.examples_of_what_to_do,
+	.examples_of_what_to_do_title {
+		float: right;
+		clear: right;
+	}
 
-.examples_of_what_to_do,
-.examples_of_what_to_do_title {
-    float: right;
-    clear: right;
+	.content__inner ul.what_to_do_with,
+	.content__inner ul.examples_of_what_to_do {
+		margin-left: 2rem;	
+		margin-right: 2rem;	
+	}
 }
 
 ul.what_to_do_with li a,
