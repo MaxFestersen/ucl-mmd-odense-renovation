@@ -16,7 +16,7 @@ function hideTopdisplay(){
 }
 //On esc press//
 console.log("test")
-document.addEventListner("keyup", event=> {
+document.addEventListener("keyup", event=> {
   const key = event.key.toLowerCase();
   console.log("prøve")
   if(key=="escape"){
