@@ -435,6 +435,45 @@ ul.examples_of_what_to_do li a {
     font-weight: 700;
 }
 
+.indsats {
+	float: left;
+	width: 100%;
+}
+.indsats h3 {
+	position: relative;
+	float: right;
+	font-size: 38px;
+	font-weight: 600;
+	color: #FFF;
+}
+.indsats h3:before {
+	content:"";
+	position: absolute;
+	left: 92px;
+	top: -50%;
+	width: 100vw;
+	height: 100vh;
+	height: calc(5em + 100%);
+	background-color:#a0c636;
+	z-index:-1;
+}
+.indsats h3:after {
+	content:"";
+	position: absolute;
+	left: -257px;
+	top: -50%;
+	width: 350px;
+	height: calc(5em + 100%);
+	border-top-left-radius: 100%;
+	background-color:#a0c636;
+	z-index:-1;
+}
+@media (min-width: 768px) {
+	.indsats h3:after,
+	.indsats h3:before {
+		height: calc(7em + 100%);
+	}
+}
 
 /* FOOTER SEARCH */
 
