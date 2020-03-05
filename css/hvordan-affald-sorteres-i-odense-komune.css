@@ -497,14 +497,40 @@ ul.examples_of_what_to_do li a {
 }
 .indsats h3:before {
 	content:"";
+	clip-path: polygon(25% 3%, 40% 5%, 60% 5%, 75% 3%, 90% 0, 100% 0, 100% 100%, 0 100%, 0 0, 10% 0);
 	position: absolute;
 	left: 92px;
 	top: -50%;
-	width: 100vw;
+	width: calc(100vw - 40px);
 	height: 100vh;
 	height: calc(5em + 100%);
 	background-color:#a0c636;
 	z-index:-1;
+}
+@media (min-width: 584px) {
+	.indsats h3:before {
+		width: calc(100vw - 340px);
+	}
+}
+@media (min-width: 786px) {
+	.indsats h3:before {
+		width: calc(100vw - 355px);
+	}
+}
+@media (min-width: 1100px) {
+	.indsats h3:before {
+		width: calc(100vw - 785px);
+	}
+}
+@media (min-width: 1440px) {
+	.indsats h3:before {
+		width: calc(100vw - 958px);
+	}
+}
+@media (min-width: 1920px) {
+	.indsats h3:before {
+		width: calc(100vw - 1195px);
+	}
 }
 .indsats h3:after {
 	content:"";
