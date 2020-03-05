@@ -301,12 +301,14 @@ hr {
 
 .sort-item-card img {
     max-width: 50%;
+    max-height: 11vw;
 }
 
 .sort-item-card span {
     position: absolute;
-    bottom: 6vw;
+    bottom: 4vw;
     width: 100%;
+	font-size: 1.8vw;
     text-align: center;
 }
 
@@ -323,12 +325,15 @@ hr {
     position: relative;
     float: left;
     width: 100%;
-    padding: 10px 0;
     margin-bottom: 20px;
     z-index: 100;
 }
+.static_content_title_wrapper{
+	float: left;
+	padding: 15px;
+}
 
-#static_main_section .static_content_title:after,
+#static_main_section .static_content_title_wrapper:after,
 #static_main_section .static_content_title:before {
     content: "";
     position: absolute;
@@ -337,8 +342,9 @@ hr {
     z-index: -1;
 }
 
-#static_main_section .static_content_title:after {
-    width: 25vw;
+#static_main_section .static_content_title_wrapper:after {
+    width: 100%;
+    min-width: 25vw;
     height: 100%;
 }
 
@@ -347,42 +353,42 @@ hr {
     width: 100vw;
 }
 
-#madaffald .static_content_title:after,
+#madaffald .static_content_title_wrapper:after,
 #madaffald .static_content_title:before {
     background-color: #038f39;
 }
 
-#restaffald .static_content_title:after,
+#restaffald .static_content_title_wrapper:after,
 #restaffald .static_content_title:before {
     background-color: #262626;
 }
 
-#glas .static_content_title:after,
+#glas .static_content_title_wrapper:after,
 #glas .static_content_title:before {
     background-color: #54b6a9;
 }
 
-#metal .static_content_title:after,
+#metal .static_content_title_wrapper:after,
 #metal .static_content_title:before {
     background-color: #444444;
 }
 
-#papir .static_content_title:after,
+#papir .static_content_title_wrapper:after,
 #papir .static_content_title:before {
     background-color: #3f7abc;
 }
 
-#smaat-pap .static_content_title:after,
+#smaat-pap .static_content_title_wrapper:after,
 #smaat-pap .static_content_title:before {
     background-color: #e0c495;
 }
 
-#plast .static_content_title:after,
+#plast .static_content_title_wrapper:after,
 #plast .static_content_title:before {
     background-color: #f00;
 }
 
-#oevrigt .static_content_title:after,
+#oevrigt .static_content_title_wrapper:after,
 #oevrigt .static_content_title:before {
     background-color: #00f;
 }
@@ -403,7 +409,6 @@ hr {
 
 .static_content_title h2 {
     color: #FFF;
-    padding-left: 5px;
     line-height: 70px;
 }
 
