@@ -92,6 +92,12 @@ hr {
     display: inline;
 }
 
+/* h1 TITLE */
+
+.hero--alt h1,
+.teaser__text > .title {
+	margin-top: calc( 0.5rem + 1rem * 1.4);
+}
 
 /* BANNER */
 
