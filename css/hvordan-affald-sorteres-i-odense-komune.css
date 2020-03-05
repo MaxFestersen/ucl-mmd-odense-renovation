@@ -187,8 +187,7 @@ hr {
     padding-bottom: 100px;
 }
 
-#top-display .close_button,
-#bottom-display .close_button {
+#interactive_main_content .close_button {
     position: absolute;
     right: 0;
 	font-size: 30px;
@@ -199,20 +198,17 @@ hr {
     transition: font-size 0.3s, line-height 0.2s;
 }
 
-#top-display .close_button:hover,
-#bottom-display .close_button:hover {
+#interactive_main_content .close_button:hover {
 	font-size: 35px;
 	line-height: 35px;
 }
 
 @media (min-width: 768px) {
-	#top-display .close_button,
-	#bottom-display .close_button {
+	#interactive_main_content .close_button {
 		font-size: 50px;
 		line-height: 50px;
 	}
-	#top-display .close_button:hover,
-	#bottom-display .close_button:hover {
+	#interactive_main_content .close_button:hover {
 		font-size: 55px;
 		line-height: 55px;
 	}
@@ -224,18 +220,29 @@ hr {
     clear: both;
 }
 
-#top-display ul.what_to_do_with li,
-#top-display .examples_of_what_to_do_title,
-#top-display ul.examples_of_what_to_do li,
-#bottom-display ul.what_to_do_with li,
-#bottom-display .examples_of_what_to_do_title,
-#bottom-display ul.examples_of_what_to_do li {
+#interactive_main_content .main_content_title {
+	margin-bottom: 30px;
+}
+
+#interactive_main_content ul.what_to_do_with li,
+#interactive_main_content .examples_of_what_to_do_title,
+#interactive_main_content ul.examples_of_what_to_do li {
     color: #FFF;
 }
 
-#top-display .content__inner ul li:before,
-#bottom-display .content__inner ul li:before {
+#interactive_main_content .content__inner ul li:before {
     background-color: #FFF;
+}
+
+#interactive_main_content .main_content_content a{
+	color: #CCC;
+	text-decoration: underline;
+}
+
+#interactive_main_content .main_content_content a:active,
+#interactive_main_content .main_content_content a:focus,
+#interactive_main_content .main_content_content a:hover {
+	color: #DDD;
 }
 
 .sort-item-display .content__inner {
@@ -343,20 +350,18 @@ hr {
     margin-bottom: 50px;
 }
 
-#static_main_section .static_content_title {
+#static_main_section .main_content_title {
     position: relative;
     float: left;
-    width: 100%;
-    margin-bottom: 20px;
     z-index: 100;
 }
-.static_content_title_wrapper{
+.main_content_title_wrapper{
 	float: left;
 	padding: 15px;
 }
 
-#static_main_section .static_content_title_wrapper:after,
-#static_main_section .static_content_title:before {
+#static_main_section .main_content_title_wrapper:after,
+#static_main_section .main_content_title:before {
     content: "";
     position: absolute;
     top: 0;
@@ -364,78 +369,78 @@ hr {
     z-index: -1;
 }
 
-#static_main_section .static_content_title_wrapper:after {
+#static_main_section .main_content_title_wrapper:after {
     width: 100%;
     min-width: 25vw;
     height: 100%;
 }
 
-#static_main_section .static_content_title:before {
+#static_main_section .main_content_title:before {
     height: 25%;
     width: 100vw;
 }
 
-#madaffald .static_content_title_wrapper:after,
-#madaffald .static_content_title:before {
+#madaffald .main_content_title_wrapper:after,
+#madaffald .main_content_title:before {
     background-color: #038f39;
 }
 
-#restaffald .static_content_title_wrapper:after,
-#restaffald .static_content_title:before {
+#restaffald .main_content_title_wrapper:after,
+#restaffald .main_content_title:before {
     background-color: #262626;
 }
 
-#glas .static_content_title_wrapper:after,
-#glas .static_content_title:before {
+#glas .main_content_title_wrapper:after,
+#glas .main_content_title:before {
     background-color: #54b6a9;
 }
 
-#metal .static_content_title_wrapper:after,
-#metal .static_content_title:before {
+#metal .main_content_title_wrapper:after,
+#metal .main_content_title:before {
     background-color: #444444;
 }
 
-#papir .static_content_title_wrapper:after,
-#papir .static_content_title:before {
+#papir .main_content_title_wrapper:after,
+#papir .main_content_title:before {
     background-color: #3f7abc;
 }
 
-#smaat-pap .static_content_title_wrapper:after,
-#smaat-pap .static_content_title:before {
+#smaat-pap .main_content_title_wrapper:after,
+#smaat-pap .main_content_title:before {
     background-color: #e0c495;
 }
 
-#plast .static_content_title_wrapper:after,
-#plast .static_content_title:before {
+#plast .main_content_title_wrapper:after,
+#plast .main_content_title:before {
     background-color: #f00;
 }
 
-#oevrigt .static_content_title_wrapper:after,
-#oevrigt .static_content_title:before {
+#oevrigt .main_content_title_wrapper:after,
+#oevrigt .main_content_title:before {
     background-color: #00f;
 }
 
-.static_content_title figure,
-.static_content_title h2 {
+.main_content_title figure,
+.main_content_title h2 {
     float: left;
 }
 
-.static_content_title figure {
+.main_content_title figure {
     max-height: 100px;
 }
 
-.static_content_title figure img {
+.main_content_title figure img {
     float: left;
     height: 70px;
 }
 
-.static_content_title h2 {
+.main_content_title h2 {
 	margin-left: 10px;
     color: #FFF;
     line-height: 70px;
 }
 
-.static_content_content {
+.main_content_content {
     position: relative;
     float: left;
     width: 100%;

@@ -191,20 +191,20 @@
                         <div class="content__inner">
                             <div class="positionerer">
                               <a onclick="hideTopdisplay()"class="close_button" title="Luk beskrivelsen.">&times;</a>
-                                <div class="static_content_title">
+                                <div class="main_content_title">
                                     <figure>
-                                        <img src="images/placeholder.svg" alt="" />
+                                        <img class="main_content_icon" src="images/placeholder.svg" alt="" />
                                     </figure>
-                                    <span class="h2-like"></span>
+                                    <span class="h2-like main_content_title"></span>
                                 </div>
-                                <div class="static_content_content"></div>
+                                <div class="main_content_content"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="grid-sort-card">
                     <div id="madaffald-card" class="grid-item">
-                        <a id="madaffald-button" href="#top-display" class="sort-item-card" onclick="fuck(color = '#038f39')">
+                        <a id="madaffald-button" href="#top-display" class="sort-item-card" onclick="showDisplay(color = '#038f39', this.id)">
                             <figure>
                                 <img src="images/madaffald.svg" alt="" />
                             </figure>
@@ -212,7 +212,7 @@
                         </a>
                     </div>
                     <div id="restaffald-card" class="grid-item">
-                        <a id="restaffald-button" href="#top-display" class="sort-item-card" onclick="fuck(color = '#262626')">
+                        <a id="restaffald-button" href="#top-display" class="sort-item-card" onclick="showDisplay(color = '#262626', this.id)">
                             <figure>
                                 <img src="images/restaffald.svg" alt="" />
                             </figure>
@@ -220,7 +220,7 @@
                         </a>
                     </div>
                     <div id="glas-card" class="grid-item">
-                        <a id="glas-button" href="#top-display" class="sort-item-card" onclick="fuck(color = '#54b6a9')">
+                        <a id="glas-button" href="#top-display" class="sort-item-card" onclick="showDisplay(color = '#54b6a9', this.id)">
                             <figure>
                                 <img src="images/glas.svg" alt="" />
                             </figure>
@@ -228,7 +228,7 @@
                         </a>
                     </div>
                     <div id="metal-card" class="grid-item">
-                        <a id="metal-button" href="#top-display" class="sort-item-card" onclick="fuck(color = '#444444')">
+                        <a id="metal-button" href="#top-display" class="sort-item-card" onclick="showDisplay(color = '#444444', this.id)">
                             <figure>
                                 <img src="images/metal.svg" alt="" />
                             </figure>
@@ -236,7 +236,7 @@
                         </a>
                     </div>
                     <div id="papir-card" class="grid-item">
-                        <a href="#bottom-display" class="sort-item-card" onclick="">
+                        <a id="papir-button" href="#bottom-display" class="sort-item-card"  onclick="showDisplay(color = '#3f7abc', this.id)">
                             <figure>
                                 <img src="images/papir.svg" alt="" />
                             </figure>
@@ -244,7 +244,7 @@
                         </a>
                     </div>
                     <div id="smaat-pap-card" class="grid-item">
-                        <a href="#bottom-display" class="sort-item-card" onclick="">
+                        <a id="smaat-pap-button" href="#bottom-display" class="sort-item-card"  onclick="showDisplay(color = '#e0c495', this.id)">
                             <figure>
                                 <img src="images/pap.svg" alt="" />
                             </figure>
@@ -252,7 +252,7 @@
                         </a>
                     </div>
                     <div id="plast-card" class="grid-item">
-                        <a href="#bottom-display" class="sort-item-card" onclick="">
+                        <a id="plast-button" href="#bottom-display" class="sort-item-card"  onclick="showDisplay(color = '#f00', this.id)">
                             <figure>
                                 <img src="images/plast.svg" alt="" />
                             </figure>
@@ -260,7 +260,7 @@
                         </a>
                     </div>
                     <div id="oevrigt-card" class="grid-item">
-                        <a href="#bottom-display" class="sort-item-card" onclick="">
+                        <a id="oevrigt-button" href="#bottom-display" class="sort-item-card"  onclick="showDisplay(color = '#00f', this.id)">
                             <figure>
                                 <img src="images/diverse.svg" alt="" />
                             </figure>
@@ -272,14 +272,14 @@
                     <div class="container">
                         <div class="content__inner">
                             <div class="positionerer">
-                                <a onclick="hideTopdisplay"class="close_button" title="Luk beskrivelsen.">&times;</a>
-                                <div class="static_content_title">
+                              <a onclick="hideTopdisplay()"class="close_button" title="Luk beskrivelsen.">&times;</a>
+                                <div class="main_content_title">
                                     <figure>
-                                        <img src="images/placeholder.svg" alt="" />
+                                        <img class="main_content_icon" src="images/placeholder.svg" alt="" />
                                     </figure>
-                                    <span class="h2-like"></span>
+                                    <span class="h2-like main_content_title"></span>
                                 </div>
-                                <div class="static_content_content"></div>
+                                <div class="main_content_content"></div>
                             </div>
                         </div>
                     </div>
@@ -290,15 +290,15 @@
                 <div class="content__inner">
                     <!-- STATIC MAIN CONTENT -->
                     <article id="madaffald">
-                        <div class="static_content_title">
-							<div class="static_content_title_wrapper">
+                        <div class="main_content_title">
+							<div class="main_content_title_wrapper">
 								<figure>
-									<img src="images/madaffald.svg" alt="" />
+									<img class="main_content_icon" src="images/madaffald.svg" alt="Ikon for madaffald." title="Ikon for madaffald." />
 								</figure>
-								<h2>MADAFFALD</h2>
+								<h2 class="main_content_title">MADAFFALD</h2>
 							</div>
                         </div>
-                        <div class="static_content_content">
+                        <div class="main_content_content">
                             <ul class="what_to_do_with">
                                 <li>Madaffald skal i skraldespanden med dette ikon.</li>
                                 <li>Madaffald skal sorteres i poser - husk knude på posen.</li>
@@ -317,15 +317,15 @@
                         </div>
                     </article>
                     <article id="restaffald">
-                        <div class="static_content_title">
-							<div class="static_content_title_wrapper">
+                        <div class="main_content_title">
+							<div class="main_content_title_wrapper">
 								<figure>
-									<img src="images/restaffald.svg" alt="" />
+									<img class="main_content_icon" src="images/restaffald.svg" alt="Ikon for restaffald." title="Ikon for restaffald." />
 								</figure>
-								<h2>RESTAFFALD</h2>
+								<h2 class="main_content_title">RESTAFFALD</h2>
 							</div>
                         </div>
-                        <div class="static_content_content">
+                        <div class="main_content_content">
                             <ul class="what_to_do_with">
                                 <li>Restaffald skal sorteres i poser - husk knude på posen.</li>
                                 <li>Restaffald brændes. Læg derfor kun det affald i som ikke kan genanvendes</li>
@@ -344,15 +344,15 @@
                         </div>
                     </article>
                     <article id="glas">
-                        <div class="static_content_title">
-							<div class="static_content_title_wrapper">
+                        <div class="main_content_title">
+							<div class="main_content_title_wrapper">
 								<figure>
-									<img src="images/glas.svg" alt="" />
+									<img class="main_content_icon" src="images/glas.svg" alt="Ikon for glas." title="Ikon for glas." />
 								</figure>
-								<h2>GLAS</h2>
+								<h2 class="main_content_title">GLAS</h2>
 							</div>
                         </div>
-                        <div class="static_content_content">
+                        <div class="main_content_content">
                             <ul class="what_to_do_with">
                                 <li>Glas smeltes om igen og igen, til nye glas og flasker.</li>
                                 <li>Når glas genanvendes, sparer vi på klodens ressourcer.</li>
@@ -367,15 +367,15 @@
                         </div>
                     </article>
                     <article id="metal">
-                        <div class="static_content_title">
-							<div class="static_content_title_wrapper">
+                        <div class="main_content_title">
+							<div class="main_content_title_wrapper">
 								<figure>
-									<img src="images/metal.svg" alt="" />
+									<img class="main_content_icon" src="images/metal.svg" alt="Ikon for metal." title="Ikon for metal." />
 								</figure>
-								<h2>METAL</h2>
+								<h2 class="main_content_title">METAL</h2>
 							</div>
                         </div>
-                        <div class="static_content_content">
+                        <div class="main_content_content">
                             <ul class="what_to_do_with">
                                 <li>Metallet bliver smeltet om og brugt som råvare til produktion af nye produkter fx stegepander, cykler eller metalcontainere.</li>
                                 <li>Når metal genanvendes, sparer vi mellem 60-75 % af den energi, der skal til for at fremstille nyt.</li>
@@ -392,15 +392,15 @@
                         </div>
                     </article>
                     <article id="papir">
-                        <div class="static_content_title">
-							<div class="static_content_title_wrapper">
+                        <div class="main_content_title">
+							<div class="main_content_title_wrapper">
 								<figure>
-									<img src="images/papir.svg" alt="" />
+									<img class="main_content_icon" src="images/papir.svg" alt="Ikon for papir." title="Ikon for papir." />
 								</figure>
-								<h2>PAPIR</h2>
+								<h2 class="main_content_title">PAPIR</h2>
 							</div>
                         </div>
-                        <div class="static_content_content">
+                        <div class="main_content_content">
                             <ul class="what_to_do_with">
                                 <li>Papir køres til fabrikker, der omdanner det til nyt papir og pap. Papiret opløses i vand og bliver til en "grødagtig" masse, som kaldes pulp.</li>
                                 <li>Ved at genanvende papiret sparer man miljøet for den proces, der kræves for at lave nyt papir af træ.</li>
@@ -416,15 +416,15 @@
                         </div>
                     </article>
                     <article id="smaat-pap">
-                        <div class="static_content_title">
-							<div class="static_content_title_wrapper">
+                        <div class="main_content_title">
+							<div class="main_content_title_wrapper">
 								<figure>
-									<img src="images/pap.svg" alt="" />
+									<img class="main_content_icon" src="images/pap.svg" alt="Ikon for småt pap." title="Ikon for småt pap." />
 								</figure>
-								<h2>SMÅT PAP</h2>
+								<h2 class="main_content_title">SMÅT PAP</h2>
 							</div>
                         </div>
-                        <div class="static_content_content">
+                        <div class="main_content_content">
                             <ul class="what_to_do_with">
                                 <li>Papir genanvendes ved, at opløses i vand og bliver til en "grødagtig" masse. Massen kan benyttes til at lave fx nyt avispapir, toiletpapir.</li>
                             </ul>
@@ -437,15 +437,15 @@
                         </div>
                     </article>
                     <article id="plast">
-                        <div class="static_content_title">
-							<div class="static_content_title_wrapper">
+                        <div class="main_content_title">
+							<div class="main_content_title_wrapper">
 								<figure>
-									<img src="images/plast.svg" alt="" />
+									<img class="main_content_icon" src="images/plast.svg" alt="Ikon for hård plast." title="Ikon for hård plast." />
 								</figure>
-								<h2>PLAST</h2>
+								<h2 class="main_content_title">PLAST</h2>
 							</div>
                         </div>
-                        <div class="static_content_content">
+                        <div class="main_content_content">
                             <ul class="what_to_do_with">
                                 <li>Plast skal på sigt efterbehandles i et sorteringsanlæg, som kan udsortere plast i specifikke plasttyper og andre genanvendelige affaldstyper.</li>
                                 <li>Målet er at give Odense en fremtidssikker affaldsløsning med høj genanvendelse.</li>
@@ -472,15 +472,15 @@
                         </div>
                     </article>
                     <article id="oevrigt">
-                        <div class="static_content_title">
- 							<div class="static_content_title_wrapper">
+                        <div class="main_content_title">
+ 							<div class="main_content_title_wrapper">
 							   <figure>
-									<img src="images/diverse.svg" alt="" />
+									<img class="main_content_icon" src="images/diverse.svg" alt="Ikoner for pærer, batterier og elektronik." title="Ikoner for pærer, batterier og elektronik." />
 								</figure>
-								<h2>ØVRIGT</h2>
+								<h2 class="main_content_title">ØVRIGT</h2>
 							</div>
                         </div>
-                        <div class="static_content_content">
+                        <div class="main_content_content">
                             <ul class="what_to_do_with">
                                 <li>Øvrigt indhold skal sorteres på genbrugspladsen.</li>
                                 <li><span>Du kan besøge <a href="https://www.odenserenovation.dk/sorteringsguide/" title="Gå til sorteringsguiden.">sorteringsguiden</a>, hvis du vil undersøge yderligere information om hvor du skal sortere det på din nærmeste genbrugsplads.</span></li>
