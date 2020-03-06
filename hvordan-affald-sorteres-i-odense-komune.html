@@ -183,8 +183,9 @@
             </div>
         </section>
         <!-- MAIN CONTENT -->
-        <main class="row text-content">
+        <main id="main" class="row text-content">
             <!-- INTERACTIVE MAIN CONTENT -->
+			<div id="view_top_display"></div>
             <section id="interactive_main_content" class="sortering">
                 <div id="top-display" class="sort-item-display hidden">
                     <div class="container">
@@ -204,7 +205,7 @@
                 </div>
                 <div class="grid-sort-card">
                     <div id="madaffald-card" class="grid-item">
-                        <a id="madaffald-button" href="#top-display" class="sort-item-card" onclick="showDisplay(color = '#038f39', this.id)">
+                        <a id="madaffald-button" href="#view_top_display" class="sort-item-card" onclick="showDisplay(color = '#038f39', this.id)">
                             <figure>
                                 <img src="images/madaffald.svg" alt="" />
                             </figure>
@@ -212,7 +213,7 @@
                         </a>
                     </div>
                     <div id="restaffald-card" class="grid-item">
-                        <a id="restaffald-button" href="#top-display" class="sort-item-card" onclick="showDisplay(color = '#262626', this.id)">
+                        <a id="restaffald-button" href="#view_top_display" class="sort-item-card" onclick="showDisplay(color = '#262626', this.id)">
                             <figure>
                                 <img src="images/restaffald.svg" alt="" />
                             </figure>
@@ -220,7 +221,7 @@
                         </a>
                     </div>
                     <div id="glas-card" class="grid-item">
-                        <a id="glas-button" href="#top-display" class="sort-item-card" onclick="showDisplay(color = '#54b6a9', this.id)">
+                        <a id="glas-button" href="#view_top_display" class="sort-item-card" onclick="showDisplay(color = '#54b6a9', this.id)">
                             <figure>
                                 <img src="images/glas.svg" alt="" />
                             </figure>
@@ -228,7 +229,7 @@
                         </a>
                     </div>
                     <div id="metal-card" class="grid-item">
-                        <a id="metal-button" href="#top-display" class="sort-item-card" onclick="showDisplay(color = '#444444', this.id)">
+                        <a id="metal-button" href="#view_top_display" class="sort-item-card" onclick="showDisplay(color = '#444444', this.id)">
                             <figure>
                                 <img src="images/metal.svg" alt="" />
                             </figure>
@@ -236,7 +237,7 @@
                         </a>
                     </div>
                     <div id="papir-card" class="grid-item">
-                        <a id="papir-button" href="#bottom-display" class="sort-item-card"  onclick="showDisplay(color = '#3f7abc', this.id)">
+                        <a id="papir-button" href="#papir-button" class="sort-item-card"  onclick="showDisplay(color = '#3f7abc', this.id)">
                             <figure>
                                 <img src="images/papir.svg" alt="" />
                             </figure>
@@ -244,7 +245,7 @@
                         </a>
                     </div>
                     <div id="smaat-pap-card" class="grid-item">
-                        <a id="smaat-pap-button" href="#bottom-display" class="sort-item-card"  onclick="showDisplay(color = '#e0c495', this.id)">
+                        <a id="smaat-pap-button" href="#papir-button" class="sort-item-card"  onclick="showDisplay(color = '#e0c495', this.id)">
                             <figure>
                                 <img src="images/pap.svg" alt="" />
                             </figure>
@@ -252,7 +253,7 @@
                         </a>
                     </div>
                     <div id="plast-card" class="grid-item">
-                        <a id="plast-button" href="#bottom-display" class="sort-item-card"  onclick="showDisplay(color = '#f00', this.id)">
+                        <a id="plast-button" href="#papir-button" class="sort-item-card"  onclick="showDisplay(color = '#f00', this.id)">
                             <figure>
                                 <img src="images/plast.svg" alt="" />
                             </figure>
@@ -260,7 +261,7 @@
                         </a>
                     </div>
                     <div id="oevrigt-card" class="grid-item">
-                        <a id="oevrigt-button" href="#bottom-display" class="sort-item-card"  onclick="showDisplay(color = '#00f', this.id)">
+                        <a id="oevrigt-button" href="#papir-button" class="sort-item-card"  onclick="showDisplay(color = '#00f', this.id)">
                             <figure>
                                 <img src="images/diverse.svg" alt="" />
                             </figure>

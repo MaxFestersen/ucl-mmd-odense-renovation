@@ -64,9 +64,11 @@ function showDisplay(color, id){
 
   // Update title
   // hentested = definer hvor det skal hentes
-
+  var staticTitle = getFirstClassFromId(category, 'main_content_title');
   // placering = definer hvor skal sættes
+  var topTitle = getFirstClassFromId(display, 'main_content_title');
   // sæt placering = hentested
+  topTitle.innerHTML = staticTitle.innerHTML;
 
   // Update content
   var staticContent = getFirstClassFromId(category, 'main_content_content');
@@ -91,6 +93,7 @@ function getFirstClassFromId(id, Class) {
   content = content[0];
   return(content)
 }
+
 //MADAFFALD  onlick "close" add "display hidden"
 function hideDisplay(display){
   //console.log("#top-display hidden with hidden class.")
