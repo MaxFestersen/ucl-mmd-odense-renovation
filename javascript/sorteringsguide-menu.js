@@ -64,6 +64,7 @@ function showDisplay(color, id){
 
   // Update title
   // hentested = definer hvor det skal hentes
+
   // placering = definer hvor skal sættes
   // sæt placering = hentested
 
@@ -71,12 +72,12 @@ function showDisplay(color, id){
   var staticContent = getFirstClassFromId(category, 'main_content_content');
   var topContent = getFirstClassFromId(display, 'main_content_content');
   topContent.innerHTML = staticContent.innerHTML;
-  
+
   // Show section
   //console.log("#top-display visable by removal of hidden class.");
   display.style.backgroundColor = color;
   display.classList.remove("hidden");
-  
+
   // Hide section
   if(display == bottomDisplay){
 	  hideTopdisplay()
