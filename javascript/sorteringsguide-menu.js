@@ -80,9 +80,9 @@ function showDisplay(color, id){
 
   // Hide section
   if(display == bottomDisplay){
-	  hideTopdisplay()
+	  hideDisplay(topDisplay)
   } else {
-	  // hidebottomdisplay?
+	  hideDisplay(bottomDisplay)
   }
 }
 
@@ -92,15 +92,15 @@ function getFirstClassFromId(id, Class) {
   return(content)
 }
 //MADAFFALD  onlick "close" add "display hidden"
-function hideTopdisplay(){
-  console.log("#top-display hidden with hidden class.")
-  topDisplay.classList.add("hidden");
+function hideDisplay(display){
+  //console.log("#top-display hidden with hidden class.")
+  display.classList.add("hidden");
 }
 //On esc press
 document.addEventListener("keyup", event=> {
   const key = event.key.toLowerCase();
   if(key=="escape"){
-    hideTopdisplay();
+    hideDisplay();
   }
 });
 
