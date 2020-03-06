@@ -346,7 +346,7 @@ hr {
 }
 
 #plast-card .sort-item-card {
-    background-color: #f00;
+    background-color: #863B7C;
 }
 
 #oevrigt-card .sort-item-card {
@@ -438,7 +438,11 @@ hr {
 
 #plast .main_content_title_wrapper:after,
 #plast .main_content_title:before {
-    background-color: #f00;
+    background-color: #863B7C;
+}
+
+#plastinfo {
+    margin: 100px;
 }
 
 #oevrigt .main_content_title_wrapper:after,
@@ -477,6 +481,7 @@ hr {
     width: 100%;
     float: left;
     z-index: 100;
+    padding: 30px;
 }
 
 @media (min-width: 768px) {
@@ -506,6 +511,7 @@ ul.examples_of_what_to_do li a {
 .examples_of_what_to_do_title {
     width: 50%;
     font-weight: 700;
+    padding: 20px;
 }
 
 .indsats {
@@ -622,7 +628,7 @@ ul.examples_of_what_to_do li a {
 
 .alert {
     width: 100%;
-	max-height: 160px;
+    max-height: 160px;
     padding: 20px;
     text-align: center;
     background-color: #f44336;
