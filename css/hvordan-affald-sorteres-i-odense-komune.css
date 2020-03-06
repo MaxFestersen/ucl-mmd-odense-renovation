@@ -621,7 +621,7 @@ ul.examples_of_what_to_do li a {
 }
 
 #studieopgave_oplysning {
-    transition: 0.7s;
+    transition: padding 2s;
 }
 
 @media (max-width: 768px) {
