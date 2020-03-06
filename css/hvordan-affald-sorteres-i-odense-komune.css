@@ -54,7 +54,7 @@ hr {
 }
 
 .hidden {
-    height: 0 !important;
+    max-height: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
     overflow: hidden !important;
@@ -621,7 +621,7 @@ ul.examples_of_what_to_do li a {
 }
 
 #studieopgave_oplysning {
-    transition: 0.7s;
+    transition: max-height 2s, padding 2s;
 }
 
 @media (max-width: 768px) {
