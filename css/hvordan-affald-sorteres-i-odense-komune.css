@@ -233,6 +233,10 @@ hr {
     color: #FFF;
 }
 
+#interactive_main_content .examples_of_what_to_do_title {
+    margin-bottom: 15px;
+}
+
 #interactive_main_content .content__inner ul li:before {
     background-color: #FFF;
 }
