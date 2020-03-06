@@ -608,6 +608,7 @@ ul.examples_of_what_to_do li a {
 /* The alert message box */
 
 .alert {
+	width: 100%;
     padding: 20px;
     text-align: center;
     background-color: #f44336;
@@ -623,6 +624,15 @@ ul.examples_of_what_to_do li a {
     transition: 0.7s;
 }
 
+@media (max-width: 768px) {
+	.wrapper {
+		float: left;
+	}
+	.alert {
+		float: left;
+		margin-top: 80px;
+	}
+}
 
 /* The close button */
 
