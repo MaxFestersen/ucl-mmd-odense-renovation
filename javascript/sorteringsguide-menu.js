@@ -100,7 +100,8 @@ function hideDisplay(display){
 document.addEventListener("keyup", event=> {
   const key = event.key.toLowerCase();
   if(key=="escape"){
-    hideDisplay();
+    hideDisplay(topDisplay);
+    hideDisplay(bottomDisplay);
   }
 });
 
