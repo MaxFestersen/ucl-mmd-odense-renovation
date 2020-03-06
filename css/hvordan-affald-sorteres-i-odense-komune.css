@@ -55,6 +55,9 @@ hr {
 
 .hidden {
     height: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	overflow: hidden !important;
 }
 
 .h2-like {
@@ -228,6 +231,10 @@ hr {
 #interactive_main_content .examples_of_what_to_do_title,
 #interactive_main_content ul.examples_of_what_to_do li {
     color: #FFF;
+}
+
+#interactive_main_content .examples_of_what_to_do_title {
+    margin-bottom: 15px;
 }
 
 #interactive_main_content .content__inner ul li:before {
