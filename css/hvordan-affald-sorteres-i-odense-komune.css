@@ -161,7 +161,6 @@ hr {
     display: flex;
     justify-content: center;
     height: 100%;
-    clear: right;
 }
 
 .sort-item-display {
@@ -200,15 +199,20 @@ hr {
     width: 100%;
 	height:100vh;
 	max-height: 75vh;
+    box-sizing: initial;
 }
 
 #top-display,
 #bottom-display {
     background-color: #444;
 	transition: max-height 1s ease-in-out 0s;
-	overflow-y: auto;
 }
 
+#top-display .main_content_content,
+#bottom-display .main_content_content {
+	max-height: calc(75vh - 100px);
+	overflow-y: auto;
+}
 
 #top-display {
     padding-top: 30px;
@@ -223,34 +227,41 @@ hr {
 #interactive_main_content .close_button {
     position: absolute;
     right: 0;
+    z-index: 101;
     font-size: 30px;
     line-height: 30px;
-    z-index: 101;
+	padding-right: 0.1em;
+	padding-left: 0.1em;
+	padding-bottom: 0.2em;
+	border: solid 1px #d76f6f;
+	border-radius: 6px;
     cursor: pointer;
     color: #FFF;
-    transition: font-size 0.3s, line-height 0.2s;
+	background-color: #BD0F10;
+    transition: background-color 0.15s;
 }
 
 #interactive_main_content .close_button:hover {
-    font-size: 35px;
-    line-height: 35px;
+	background-color: #840a0b;
+}
+
+#interactive_main_content .close_button:active, #interactive_main_content .close_button:focus {
+	border-style: inset;
 }
 
 @media (min-width: 768px) {
     #interactive_main_content .close_button {
-        font-size: 50px;
-        line-height: 50px;
-    }
-    #interactive_main_content .close_button:hover {
-        font-size: 55px;
-        line-height: 55px;
+        font-size: 40px;
+        line-height: 40px;
     }
 }
 
 #top-display .h2-like,
 #bottom-display .h2-like {
+	float: left;
+	margin-left: 15px;
+	line-height: 70px;
     color: #FFF;
-    clear: both;
 }
 
 #interactive_main_content .main_content_title_secton {
@@ -316,6 +327,7 @@ hr {
     height: 25vw;
     /* 25vw is 25% of screen height. */
     color: #FFF;
+	cursor: pointer;
 }
 
 .sort-item-card:hover,
