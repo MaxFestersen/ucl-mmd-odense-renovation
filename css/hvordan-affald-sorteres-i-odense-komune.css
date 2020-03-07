@@ -441,8 +441,10 @@ hr {
     background-color: #863B7C;
 }
 
-#plastinfo {
-    margin: 100px;
+.plastinfo {
+    display: block;
+	max-width: 100%;
+	margin: 0 auto;
 }
 
 #oevrigt .main_content_title_wrapper:after,
