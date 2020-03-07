@@ -258,7 +258,9 @@ hr {
     clear: both;
 }
 
-#interactive_main_content .main_content_title {
+#interactive_main_content .main_content_title_secton {
+	float: left;
+	width: 100%;
     margin-bottom: 30px;
 }
 
