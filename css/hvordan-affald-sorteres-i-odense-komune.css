@@ -173,12 +173,29 @@ hr {
     overflow: hidden;
 }
 
-#view_top_display{
-	position: relative;
-	float:left;
+#indhold-over-affaldsorterings-ikoner, #affaldsorterings-ikoner {
+	top: -78px;
+	float: left;
 	width: 100%;
 	height: 1px;
-	margin-bottom: -2px;
+	margin-bottom: -1px; /* Dirty hag to manipulate position. This trigs the browser into positioning correctly when linked to section. */
+}
+
+#indhold-under-affaldsorterings-ikoner {
+	top: calc(-25vw - 70px);
+	float: left;
+	width: 100%;
+	height: 1px;
+	margin: -1px;
+}
+
+@media (min-width: 768px) {
+	#indhold-over-affaldsorterings-ikoner, #affaldsorterings-ikoner {
+		top: 0;
+	}
+	#indhold-under-affaldsorterings-ikoner {
+		top: -25vw;
+	}
 }
 
 #top-display,
