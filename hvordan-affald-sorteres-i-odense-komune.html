@@ -145,7 +145,7 @@
     <!-- BANNER -->
     <!-- Alert om studieopgave -->
     <div id="studieopgave_oplysning" class="alert">
-        <span id="studieopgave_oplysning_closebth" class="closebtn" title="Bekræft du har set notifikationen, og gem en cookie, så siden husker det.">&times;</span>
+        <span id="studieopgave_oplysning_closebth" class="closebtn" title="Bekræft du har set notifikationen, og gem en cookie, så siden husker det.">&otimes;</span>
         <span class="h2-like">Dette er en studieopgave og er derfor kun til studiebrug!</span>
     </div>
     <div class="wrapper">
@@ -191,23 +191,21 @@
             <section id="interactive_main_content" class="sortering">
                 <div id="top-display" class="sort-item-display hidden">
                     <div class="container">
+						<a onclick="hideDisplay(topDisplay)" href="#affaldsorterings-ikoner" class="close_button" title="Luk beskrivelsen.">&otimes;</a>
                         <div class="content__inner">
-                            <div class="positionerer">
-                                <a onclick="hideDisplay(topDisplay)" class="close_button" title="Luk beskrivelsen.">&times;</a>
-                                <div class="main_content_title">
-                                    <figure>
-                                        <img class="main_content_icon" src="images/placeholder.svg" alt="" />
-                                    </figure>
-                                    <span class="h2-like main_content_title"></span>
-                                </div>
-                                <div class="main_content_content"></div>
-                            </div>
+							<div class="main_content_title_secton">
+								<figure>
+									<img class="main_content_icon" src="images/placeholder.svg" alt="" />
+								</figure>
+								<span class="h2-like main_content_title"></span>
+							</div>
+							<div class="main_content_content"></div>
                         </div>
                     </div>
                 </div>
                 <div class="grid-sort-card">
                     <div id="madaffald-card" class="grid-item">
-                        <a id="madaffald-button" href="#view_top_display" class="sort-item-card" onclick="showDisplay(color = '#038f39', this.id)">
+                        <a id="madaffald-button" href="#indhold-over-affaldsorterings-ikoner" class="sort-item-card" onclick="showDisplay(color = '#038f39', this.id)">
                             <figure>
                                 <img src="images/madaffald.svg" alt="" />
                             </figure>
@@ -215,7 +213,7 @@
                         </a>
                     </div>
                     <div id="restaffald-card" class="grid-item">
-                        <a id="restaffald-button" href="#view_top_display" class="sort-item-card" onclick="showDisplay(color = '#262626', this.id)">
+                        <a id="restaffald-button" href="#indhold-over-affaldsorterings-ikoner" class="sort-item-card" onclick="showDisplay(color = '#262626', this.id)">
                             <figure>
                                 <img src="images/restaffald.svg" alt="" />
                             </figure>
@@ -223,7 +221,7 @@
                         </a>
                     </div>
                     <div id="glas-card" class="grid-item">
-                        <a id="glas-button" href="#view_top_display" class="sort-item-card" onclick="showDisplay(color = '#54b6a9', this.id)">
+                        <a id="glas-button" href="#indhold-over-affaldsorterings-ikoner" class="sort-item-card" onclick="showDisplay(color = '#54b6a9', this.id)">
                             <figure>
                                 <img src="images/glas.svg" alt="" />
                             </figure>
@@ -231,7 +229,7 @@
                         </a>
                     </div>
                     <div id="metal-card" class="grid-item">
-                        <a id="metal-button" href="#view_top_display" class="sort-item-card" onclick="showDisplay(color = '#444444', this.id)">
+                        <a id="metal-button" href="#indhold-over-affaldsorterings-ikoner" class="sort-item-card" onclick="showDisplay(color = '#444444', this.id)">
                             <figure>
                                 <img src="images/metal.svg" alt="" />
                             </figure>
@@ -239,7 +237,7 @@
                         </a>
                     </div>
                     <div id="papir-card" class="grid-item">
-                        <a id="papir-button" href="#papir-button" class="sort-item-card"  onclick="showDisplay(color = '#3f7abc', this.id)">
+                        <a id="papir-button" href="#indhold-under-affaldsorterings-ikoner" class="sort-item-card"  onclick="showDisplay(color = '#3f7abc', this.id)">
                             <figure>
                                 <img src="images/papir.svg" alt="" />
                             </figure>
@@ -247,7 +245,7 @@
                         </a>
                     </div>
                     <div id="smaat-pap-card" class="grid-item">
-                        <a id="smaat-pap-button" href="#papir-button" class="sort-item-card"  onclick="showDisplay(color = '#e0c495', this.id)">
+                        <a id="smaat-pap-button" href="#indhold-under-affaldsorterings-ikoner" class="sort-item-card"  onclick="showDisplay(color = '#e0c495', this.id)">
                             <figure>
                                 <img src="images/pap.svg" alt="" />
                             </figure>
@@ -255,7 +253,7 @@
                         </a>
                     </div>
                     <div id="plast-card" class="grid-item">
-                        <a id="plast-button" href="#papir-button" class="sort-item-card"  onclick="showDisplay(color = '#863B7C', this.id)">
+                        <a id="plast-button" href="#indhold-under-affaldsorterings-ikoner" class="sort-item-card"  onclick="showDisplay(color = '#863B7C', this.id)">
                             <figure>
                                 <img src="images/plast.svg" alt="" />
                             </figure>
@@ -263,7 +261,7 @@
                         </a>
                     </div>
                     <div id="oevrigt-card" class="grid-item">
-                        <a id="oevrigt-button" href="#papir-button" class="sort-item-card"  onclick="showDisplay(color = '#00f', this.id)">
+                        <a id="oevrigt-button" href="#indhold-under-affaldsorterings-ikoner" class="sort-item-card"  onclick="showDisplay(color = '#00f', this.id)">
                             <figure>
                                 <img src="images/diverse.svg" alt="" />
                             </figure>
@@ -275,16 +273,14 @@
                 <div id="bottom-display" class="sort-item-display hidden">
                     <div class="container">
                         <div class="content__inner">
-                            <div class="positionerer">
-                                <a onclick="hideDisplay(bottomDisplay)" class="close_button" title="Luk beskrivelsen.">&times;</a>
-                                <div class="main_content_title">
-                                    <figure>
-                                        <img class="main_content_icon" src="images/placeholder.svg" alt="" />
-                                    </figure>
-                                    <span class="h2-like main_content_title"></span>
-                                </div>
-                                <div class="main_content_content"></div>
-                            </div>
+							<a onclick="hideDisplay(bottomDisplay)" href="#affaldsorterings-ikoner" class="close_button" title="Luk beskrivelsen.">&otimes;</a>
+							<div class="main_content_title_secton">
+								<figure>
+									<img class="main_content_icon" src="images/placeholder.svg" alt="" />
+								</figure>
+								<span class="h2-like main_content_title"></span>
+							</div>
+							<div class="main_content_content"></div>
                         </div>
                     </div>
                 </div>
