@@ -375,7 +375,7 @@ hr {
     margin-bottom: 50px;
 }
 
-#static_main_section .main_content_title {
+#static_main_section .main_content_title_secton {
     position: relative;
     float: left;
     z-index: 100;
@@ -387,7 +387,7 @@ hr {
 }
 
 #static_main_section .main_content_title_wrapper:after,
-#static_main_section .main_content_title:before {
+#static_main_section .main_content_title_secton:before {
     content: "";
     position: absolute;
     top: 0;
@@ -401,43 +401,43 @@ hr {
     height: 100%;
 }
 
-#static_main_section .main_content_title:before {
+#static_main_section .main_content_title_secton:before {
     height: 25%;
     width: 100vw;
 }
 
 #madaffald .main_content_title_wrapper:after,
-#madaffald .main_content_title:before {
+#madaffald .main_content_title_secton:before {
     background-color: #038f39;
 }
 
 #restaffald .main_content_title_wrapper:after,
-#restaffald .main_content_title:before {
+#restaffald .main_content_title_secton:before {
     background-color: #262626;
 }
 
 #glas .main_content_title_wrapper:after,
-#glas .main_content_title:before {
+#glas .main_content_title_secton:before {
     background-color: #54b6a9;
 }
 
 #metal .main_content_title_wrapper:after,
-#metal .main_content_title:before {
+#metal .main_content_title_secton:before {
     background-color: #444444;
 }
 
 #papir .main_content_title_wrapper:after,
-#papir .main_content_title:before {
+#papir .main_content_title_secton:before {
     background-color: #3f7abc;
 }
 
 #smaat-pap .main_content_title_wrapper:after,
-#smaat-pap .main_content_title:before {
+#smaat-pap .main_content_title_secton:before {
     background-color: #e0c495;
 }
 
 #plast .main_content_title_wrapper:after,
-#plast .main_content_title:before {
+#plast .main_content_title_secton:before {
     background-color: #863B7C;
 }
 
@@ -448,25 +448,25 @@ hr {
 }
 
 #oevrigt .main_content_title_wrapper:after,
-#oevrigt .main_content_title:before {
+#oevrigt .main_content_title_secton:before {
     background-color: #00f;
 }
 
-.main_content_title figure,
-.main_content_title h2 {
+.main_content_title_secton figure,
+.main_content_title_secton h2 {
     float: left;
 }
 
-.main_content_title figure {
+.main_content_title_secton figure {
     max-height: 100px;
 }
 
-.main_content_title figure img {
+.main_content_title_secton figure img {
     float: left;
     height: 70px;
 }
 
-.main_content_title h2 {
+.main_content_title_secton h2 {
     margin-left: 10px;
     color: #FFF;
     line-height: 70px;
