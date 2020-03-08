@@ -2,8 +2,7 @@
 
 // VARS
 var siteName = window.location.href
-siteName = siteName.split("#");
-siteName = siteName[0];
+var splits = siteName.split("#");
 var interactiveMainContent = document.getElementById("interactive_main_content");
 var MadaffaldButton = document.getElementById("madaffald-button");
 var topDisplay = document.getElementById("top-display");
@@ -14,6 +13,10 @@ var metalButton = document.getElementById("metal-button");
 var indholdOverAffaldsorteringsIkoner = document.getElementById("indhold-over-affaldsorterings-ikoner");
 var indholdUnderAffaldsorteringsIkoner = document.getElementById("indhold-under-affaldsorterings-ikoner");
 var affaldsorteringsIkoner = document.getElementById("affaldsorterings-ikoner");
+
+// Redefiner siteName
+siteName = splits[0];
+
 
 //Udvid sektion for affaldssortering ved tast
 function showDisplay(id){
@@ -151,4 +154,18 @@ document.addEventListener("keyup", event=> {
 var links = interactiveMainContent.querySelectorAll("a");
 for (i = 0; i < links.length; i++) {
   links[i].removeAttribute("href");
+}
+
+// Undersøg om brugeren prøver at besøge en bestemt sektion på siden ved indlæsning.
+if(splits[1]) {
+	window.scrollTo(0, 0);
+	var id = splits[1];
+	//console.log(id);
+	if(id == 'madaffald-button' || id == 'restaffald-button' || id == 'glas-button' || id == 'metal-button' || id == 'papir-button' || id == 'smaat-pap-button' || id == 'plast-button' || id == 'oevrigt-button') {
+		showDisplay(id);
+		console.log('Navigating to #' + id + '.');
+	} else {
+		var position = document.getElementById(id);
+		position.scrollIntoView({ behavior: 'smooth' });
+	}
 }
