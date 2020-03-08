@@ -31,6 +31,9 @@ footer {
 hr {
     margin: 10vh 0;
 }
+body {
+	padding-top: 0px;
+}
 
 .header figure,
 .header__bottom figure,
