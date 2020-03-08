@@ -69,7 +69,9 @@ body {
     font-weight: 400;
 }
 
-
+a:hover{
+	cursor: pointer;
+}
 /* HEADER */
 
 .header__logo>figure>svg {
