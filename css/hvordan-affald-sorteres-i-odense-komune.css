@@ -2,12 +2,12 @@
 
 
 /* Colors ---
-madaffald: 038f39
+madaffald: 038735
 restaffald: 262626
-glas: 54b6a9
+glas: 378177
 metal 444444
 papir 3f7abc
-småt pap e0c495
+småt pap 936E2A
 */
 
 
@@ -428,7 +428,7 @@ a:hover{
 }
 
 #madaffald-card .sort-item-card {
-    background-color: #038f39;
+    background-color: #038735;
 }
 
 #restaffald-card .sort-item-card {
@@ -436,7 +436,7 @@ a:hover{
 }
 
 #glas-card .sort-item-card {
-    background-color: #54b6a9;
+    background-color: #378177;
 }
 
 #metal-card .sort-item-card {
@@ -448,7 +448,7 @@ a:hover{
 }
 
 #smaat-pap-card .sort-item-card {
-    background-color: #e0c495;
+    background-color: #936E2A;
 }
 
 #plast-card .sort-item-card {
@@ -456,7 +456,7 @@ a:hover{
 }
 
 #oevrigt-card .sort-item-card {
-    background-color: #00f;
+    background-color: #607A1F;
 }
 
 .sort-item-card img {
@@ -514,7 +514,7 @@ a:hover{
 
 #madaffald .main_content_title_wrapper:after,
 #madaffald .main_content_title_secton:before {
-    background-color: #038f39;
+    background-color: #038735;
 }
 
 #restaffald .main_content_title_wrapper:after,
@@ -524,7 +524,7 @@ a:hover{
 
 #glas .main_content_title_wrapper:after,
 #glas .main_content_title_secton:before {
-    background-color: #54b6a9;
+    background-color: #378177;
 }
 
 #metal .main_content_title_wrapper:after,
@@ -539,7 +539,7 @@ a:hover{
 
 #smaat-pap .main_content_title_wrapper:after,
 #smaat-pap .main_content_title_secton:before {
-    background-color: #e0c495;
+    background-color: #936E2A;
 }
 
 #plast .main_content_title_wrapper:after,
@@ -555,7 +555,7 @@ a:hover{
 
 #oevrigt .main_content_title_wrapper:after,
 #oevrigt .main_content_title_secton:before {
-    background-color: #00f;
+    background-color: #607A1F;
 }
 
 .main_content_title_secton figure,
@@ -793,7 +793,7 @@ ul.examples_of_what_to_do li a {
     max-height: 160px;
     padding: 20px;
     text-align: center;
-    background-color: #f44336;
+    background-color: #E91B0C;
     color: white;
     margin-bottom: 15px;
 }

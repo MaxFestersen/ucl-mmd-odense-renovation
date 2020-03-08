@@ -26,7 +26,7 @@ function showDisplay(id){
 	  var category = document.getElementById("madaffald");
 	  var display = topDisplay;
 	  var destination = indholdOverAffaldsorteringsIkoner;
-	  var color = '#038f39';
+	  var color = '#038735';
 	  break;
 	case 'restaffald-button':
 	  // vars
@@ -40,7 +40,7 @@ function showDisplay(id){
 	  var category = document.getElementById("glas");
 	  var display = topDisplay;
 	  var destination = indholdOverAffaldsorteringsIkoner;
-	  var color = '#54b6a9';
+	  var color = '#378177';
 	  break;
 	case 'metal-button':
 	  // vars
@@ -61,7 +61,7 @@ function showDisplay(id){
 	  var category = document.getElementById("smaat-pap");
 	  var display = bottomDisplay;
 	  var destination = indholdUnderAffaldsorteringsIkoner;
-	  var color = '#e0c495';
+	  var color = '#936E2A';
 	  break;
 	case 'plast-button':
 	  // vars
@@ -75,7 +75,7 @@ function showDisplay(id){
 	  var category = document.getElementById("oevrigt");
 	  var display = bottomDisplay;
 	  var destination = indholdUnderAffaldsorteringsIkoner;
-	  var color = '#00f';
+	  var color = '#607A1F';
 	  break;
 	default:
 	  console.log('Kategorien blev ikke genkendt.')
