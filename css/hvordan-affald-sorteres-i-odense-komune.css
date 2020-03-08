@@ -34,6 +34,12 @@ hr {
 body {
 	padding-top: 0px;
 }
+a:active, a:hover {
+    outline-width: initial;
+}
+.button:focus {
+	outline: 2px solid blue;
+}
 
 .header figure,
 .header__bottom figure,
