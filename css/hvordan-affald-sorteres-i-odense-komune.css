@@ -405,7 +405,21 @@ a:hover{
 .sort-item-card figure {
     width: 100%;
     height: auto;
+	perspective: 1000px; /* Enables 3D effect */
+	transition: transform 0.4s;
+	transform-style: preserve-3d;
 }
+
+.sort-item-card:hover figure {
+	transform: rotateY(180deg) rotateX(-15deg);
+	transition: transform 0.8s;
+}
+
+.sort-item-card:active figure {
+	transform: rotateY(180deg) rotateX(15deg);
+	transition: transform 0.2s;
+}
+
 
 .sort-item-card figure svg {
     max-width: 100%;
