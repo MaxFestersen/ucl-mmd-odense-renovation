@@ -210,7 +210,7 @@ a:hover{
 #top-display,
 #bottom-display {
     background-color: #444;
-	transition: max-height 1s ease-in-out 0s;
+	transition: max-height 1s ease-in-out 0s, padding 0.7s;
 }
 
 #top-display .main_content_content,
