@@ -16,55 +16,63 @@ var indholdUnderAffaldsorteringsIkoner = document.getElementById("indhold-under-
 var affaldsorteringsIkoner = document.getElementById("affaldsorterings-ikoner");
 
 //Udvid sektion for affaldssortering ved tast
-function showDisplay(color, id){
+function showDisplay(id){
   switch(id) {
 	case 'madaffald-button':
 	  // vars
 	  var category = document.getElementById("madaffald");
 	  var display = topDisplay;
 	  var destination = indholdOverAffaldsorteringsIkoner;
+	  var color = '#038f39';
 	  break;
 	case 'restaffald-button':
 	  // vars
 	  var category = document.getElementById("restaffald");
 	  var display = topDisplay;
 	  var destination = indholdOverAffaldsorteringsIkoner;
+	  var color = '#262626';
 	  break;
 	case 'glas-button':
 	  // vars
 	  var category = document.getElementById("glas");
 	  var display = topDisplay;
 	  var destination = indholdOverAffaldsorteringsIkoner;
+	  var color = '#54b6a9';
 	  break;
 	case 'metal-button':
 	  // vars
 	  var category = document.getElementById("metal");
 	  var display = topDisplay;
 	  var destination = indholdOverAffaldsorteringsIkoner;
+	  var color = '#444444';
 	  break;
 	case 'papir-button':
 	  // vars
 	  var category = document.getElementById("papir");
 	  var display = bottomDisplay;
 	  var destination = indholdUnderAffaldsorteringsIkoner;
+	  var color = '#3f7abc';
 	  break;
 	case 'smaat-pap-button':
 	  // vars
 	  var category = document.getElementById("smaat-pap");
 	  var display = bottomDisplay;
 	  var destination = indholdUnderAffaldsorteringsIkoner;
+	  var color = '#e0c495';
 	  break;
 	case 'plast-button':
 	  // vars
 	  var category = document.getElementById("plast");
 	  var display = bottomDisplay;
 	  var destination = indholdUnderAffaldsorteringsIkoner;
+	  var color = '#863B7C';
 	  break;
 	case 'oevrigt-button':
 	  // vars
 	  var category = document.getElementById("oevrigt");
 	  var display = bottomDisplay;
 	  var destination = indholdUnderAffaldsorteringsIkoner;
+	  var color = '#00f';
 	  break;
 	default:
 	  console.log('Kategorien blev ikke genkendt.')
