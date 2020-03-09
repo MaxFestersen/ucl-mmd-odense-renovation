@@ -352,10 +352,6 @@ a:hover {
     background-color: red;
 }
 
-#interactive_main_content .close_button:active,
-#interactive_main_content .close_button:focus {
-    border-style: inset;
-}
 
 @media (min-width: 768px) {
     #interactive_main_content .close_button {
@@ -984,9 +980,4 @@ ul.examples_of_what_to_do li a {
 .closebtn:hover {
     background-color: #FFF;
     color: #E91B0C;
-}
-
-.closebtn:active,
-.closebtn:focus {
-    border-style: inset;
 }
