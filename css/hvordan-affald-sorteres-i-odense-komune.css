@@ -614,9 +614,8 @@ a:hover {
 .zoombox {
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: calc(50% + 15px);
     left: 50%;
-    font-size: 50px;
     color: white;
     transform: translate(-50%, -50%);
     margin: 0 auto;
@@ -625,14 +624,60 @@ a:hover {
 
 
 /*class for images with zoom*/
+.zoombox_link, .zoombox_link:link, .zoombox_link:hover, .zoombox_link:active {
+	float:left;
+	width: 100%;
+	height: 30px;
+	border: none !important;
+	line-height: 30px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #1a873a;
+	color: #FFF !important;
+	overflow: hidden;
+}
+
+.zoombox_link:hover {
+	background-color: #146c2e;
+}
 
 .zoomimage {
     max-width: 100vw;
-    max-height: 85vh;
+    max-height: calc(85vh - 30px);
 }
 
 .exit-text {
-    font-size: 25px;
+    font-size: 6vh;
+	position: absolute;
+    top: calc(50% - 12vh);
+    left: 0;
+    float: left;
+    width: 100%;
+	color: transparent;
+    text-align: center;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: transparent;
+	animation-name: example;
+	animation-duration: 10s;
+	background-color: transparent;
+}
+
+@keyframes example {
+  0% {
+		color: #FFF;
+		-webkit-text-stroke-color: #000;
+		background-color: rgba(0,0,0,0.5);
+  }
+  50% {
+		color: #FFF;
+		-webkit-text-stroke-color: #000;
+		background-color: rgba(0,0,0,0.5);
+  }
+  100% {
+		color: transparent;
+		-webkit-text-stroke-color: transparent;
+		background-color: transparent;
+  }
 }
 
 #oevrigt .main_content_title_wrapper:after,
