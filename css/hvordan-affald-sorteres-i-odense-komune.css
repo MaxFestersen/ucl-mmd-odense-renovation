@@ -150,6 +150,9 @@ a:hover {
     -webkit-transform: translateY(0) !important;
     transform: translateY(0) !important;
 }
+.mobile-nav__button span.hidden {
+	display: none;
+}
 
 
 /* BREADCRUMBS */
