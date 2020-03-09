@@ -295,23 +295,23 @@ a:hover {
 
 #top-display .main_content_content::-webkit-scrollbar-track,
 #bottom-display .main_content_content::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255,0.1);
 }
 
 #top-display .main_content_content::-webkit-scrollbar,
 #bottom-display .main_content_content::-webkit-scrollbar {
-    width: 12px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+	width: 12px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255,0.1);
 }
 
 #top-display .main_content_content::-webkit-scrollbar-thumb,
 #bottom-display .main_content_content::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgba(255, 255, 255,0.9);
 }
 
 #top-display {
@@ -330,10 +330,10 @@ a:hover {
     z-index: 101;
     font-size: 30px;
     line-height: 30px;
-    padding-left: 0.28em;
-    padding-right: 0.28em;
-    padding-bottom: 0.16em;
-    border-radius: 6px;
+	padding-left: 0.28em;
+	padding-right: 0.28em;
+	padding-bottom: 0.16em;
+	border-radius: 6px;
     cursor: pointer;
     color: white;
     background-color: transparent;
@@ -447,9 +447,7 @@ a:hover {
 
 .sort-item-card:hover figure {
     transform: rotateY(180deg) rotateX(-15deg);
-    /*transition: transform 0.8s;*/
-    transition-delay: 0.2s;
-    transition-duration: 2s;
+    transition: transform 0.8s;
 }
 
 .sort-item-card:active figure {
@@ -589,6 +587,43 @@ a:hover {
     margin: 0 auto;
 }
 
+/*the fullscreen overlay for zoom*/
+#overlay1{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 10000;
+    cursor: pointer;
+    
+}
+
+/*the container in which the zoomed image is*/
+.zoombox{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    padding: 0 auto;
+}
+/*class for images with zoom*/
+.zoomimage{
+    max-width: 100vw;
+    max-height: 100vh;
+    
+}
+.exit-text{
+    font-size: 25px;
+}
 #oevrigt .main_content_title_wrapper:after,
 #oevrigt .main_content_title_secton:before {
     background-color: #607A1F;
@@ -870,14 +905,14 @@ ul.examples_of_what_to_do li a {
 
 .closebtn {
     float: right;
-    padding-left: 0.28em;
-    padding-right: 0.28em;
-    padding-bottom: 0.16em;
-    border-radius: 6px;
+	padding-left: 0.28em;
+	padding-right: 0.28em;
+	padding-bottom: 0.16em;
+	border-radius: 6px;
     font-weight: bold;
     font-size: 22px;
     line-height: 20px;
-    background-color: transparent;
+	background-color: transparent;
     color: white;
     cursor: pointer;
     transition: background-color 0.15s, color 0.15s;
@@ -887,8 +922,8 @@ ul.examples_of_what_to_do li a {
 /* When moving the mouse over the close button */
 
 .closebtn:hover {
-    background-color: #FFF;
-    color: #E91B0C;
+	background-color: #FFF;
+	color: #E91B0C;
 }
 
 .closebtn:active,
