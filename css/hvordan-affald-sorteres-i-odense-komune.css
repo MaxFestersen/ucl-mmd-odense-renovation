@@ -584,8 +584,7 @@ a:hover {
 .plastinfo {
     display: block;
     max-width: 50%;
-    max-height: 
-    margin: 0 auto;
+    cursor: pointer;
 }
 
 /*the fullscreen overlay for zoom*/
