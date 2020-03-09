@@ -1,7 +1,7 @@
 // INTERACTIVE MAIN CONTENT JavaScript
 
 // VARS
-var siteName = window.location.href
+var siteName = window.location.href;
 var splits = siteName.split("#");
 var interactiveMainContent = document.getElementById("interactive_main_content");
 var MadaffaldButton = document.getElementById("madaffald-button");
