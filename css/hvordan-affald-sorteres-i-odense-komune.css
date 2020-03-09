@@ -4,7 +4,7 @@
 /* Colors ---
 madaffald: 038735
 restaffald: 262626
-glas: 378177
+glas: 29615A
 metal 444444
 papir 3f7abc
 småt pap 936E2A
@@ -447,7 +447,7 @@ a:hover {
 }
 
 #glas-card .sort-item-card {
-    background-color: #378177;
+    background-color: #29615A;
 }
 
 #metal-card .sort-item-card {
@@ -535,7 +535,7 @@ a:hover {
 
 #glas .main_content_title_wrapper:after,
 #glas .main_content_title_secton:before {
-    background-color: #378177;
+    background-color: #29615A;
 }
 
 #metal .main_content_title_wrapper:after,
