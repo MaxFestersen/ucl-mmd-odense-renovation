@@ -288,8 +288,10 @@ a:hover {
 #bottom-display .main_content_content {
     max-height: calc(75vh - 100px);
     overflow-y: auto;
-    /*SCROLLBAR STYLING*/
 }
+
+
+/*SCROLLBAR STYLING*/
 
 #top-display .main_content_content::-webkit-scrollbar-track,
 #bottom-display .main_content_content::-webkit-scrollbar-track {
@@ -327,18 +329,18 @@ a:hover {
     z-index: 101;
     font-size: 30px;
     line-height: 30px;
-	padding-right: 0.1em;
-	padding-left: 0.1em;
-	padding-bottom: 0.2em;
-	border-radius: 6px;
+    padding-right: 0.1em;
+    padding-left: 0.1em;
+    padding-bottom: 0.2em;
+    border-radius: 6px;
     cursor: pointer;
     color: white;
-	background-color: transparent;
+    background-color: transparent;
     transition: background-color 0.15s;
 }
 
 #interactive_main_content .close_button:hover {
-	background-color: red;
+    background-color: red;
 }
 
 #interactive_main_content .close_button:active,
