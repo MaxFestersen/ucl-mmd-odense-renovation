@@ -447,7 +447,9 @@ a:hover {
 
 .sort-item-card:hover figure {
     transform: rotateY(180deg) rotateX(-15deg);
-    transition: transform 0.8s;
+    /*transition: transform 0.8s;*/
+    transition-delay: 0.2s;
+    transition-duration: 2s;
 }
 
 .sort-item-card:active figure {
