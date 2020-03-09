@@ -288,6 +288,27 @@ a:hover {
 #bottom-display .main_content_content {
     max-height: calc(75vh - 100px);
     overflow-y: auto;
+    /*SCROLLBAR STYLING*/
+}
+
+#top-display .main_content_content::-webkit-scrollbar-track,
+#bottom-display .main_content_content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#top-display .main_content_content::-webkit-scrollbar,
+#bottom-display .main_content_content::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#top-display .main_content_content::-webkit-scrollbar-thumb,
+#bottom-display .main_content_content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #C5CBCE;
 }
 
 #top-display {
@@ -306,19 +327,18 @@ a:hover {
     z-index: 101;
     font-size: 30px;
     line-height: 30px;
-    padding-right: 0.1em;
-    padding-left: 0.1em;
-    padding-bottom: 0.2em;
-    border: solid 1px #d76f6f;
-    border-radius: 6px;
+	padding-right: 0.1em;
+	padding-left: 0.1em;
+	padding-bottom: 0.2em;
+	border-radius: 6px;
     cursor: pointer;
-    color: #FFF;
-    background-color: #BD0F10;
+    color: white;
+	background-color: transparent;
     transition: background-color 0.15s;
 }
 
 #interactive_main_content .close_button:hover {
-    background-color: #840a0b;
+	background-color: red;
 }
 
 #interactive_main_content .close_button:active,
