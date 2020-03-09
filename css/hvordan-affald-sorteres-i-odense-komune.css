@@ -328,9 +328,9 @@ a:hover {
     z-index: 101;
     font-size: 30px;
     line-height: 30px;
-	padding-right: 0.1em;
-	padding-left: 0.1em;
-	padding-bottom: 0.2em;
+	padding-left: 0.28em;
+	padding-right: 0.28em;
+	padding-bottom: 0.16em;
 	border-radius: 6px;
     cursor: pointer;
     color: white;
@@ -865,19 +865,30 @@ ul.examples_of_what_to_do li a {
 /* The close button */
 
 .closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
     float: right;
+	padding-left: 0.28em;
+	padding-right: 0.28em;
+	padding-bottom: 0.16em;
+	border-radius: 6px;
+    font-weight: bold;
     font-size: 22px;
     line-height: 20px;
+	background-color: transparent;
+    color: white;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.15s, color 0.15s;
 }
 
 
 /* When moving the mouse over the close button */
 
 .closebtn:hover {
-    font-size: 28px;
+	background-color: #FFF;
+	color: #E91B0C;
 }
+
+.closebtn:active,
+.closebtn:focus {
+    border-style: inset;
+}
+
