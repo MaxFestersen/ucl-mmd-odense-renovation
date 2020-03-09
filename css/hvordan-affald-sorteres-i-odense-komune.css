@@ -299,16 +299,15 @@ a:hover{
 	padding-right: 0.1em;
 	padding-left: 0.1em;
 	padding-bottom: 0.2em;
-	border: solid 1px #d76f6f;
 	border-radius: 6px;
     cursor: pointer;
-    color: #FFF;
-	background-color: #BD0F10;
+    color: white;
+	background-color: transparent;
     transition: background-color 0.15s;
 }
 
 #interactive_main_content .close_button:hover {
-	background-color: #840a0b;
+	background-color: red;
 }
 
 #interactive_main_content .close_button:active, #interactive_main_content .close_button:focus {
