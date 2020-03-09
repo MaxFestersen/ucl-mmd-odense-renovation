@@ -112,7 +112,7 @@ function showDisplay(id){
   } else {
 	  hideDisplay(bottomDisplay)
   }
-  
+
   // Update URL
   window.history.pushState(siteName, document.title, "#"+id);
 
@@ -132,7 +132,7 @@ function hideDisplay(display){
   // Hide display
   //console.log("#top-display hidden with hidden class.")
   display.classList.add("hidden");
-  
+
   // Scroll to #affaldsorterings-ikoner
   // Update URL
   window.history.pushState(siteName, document.title, "#affaldsorterings-ikoner");
@@ -168,4 +168,11 @@ if(splits[1]) {
 		var position = document.getElementById(id);
 		position.scrollIntoView({ behavior: 'smooth' });
 	}
+}
+function scrollToTop(){
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
 }
