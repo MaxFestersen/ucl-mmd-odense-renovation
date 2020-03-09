@@ -471,7 +471,12 @@
                                 <li>Urtepotter (tømte)</li>
                                 <li>Plast fra legetøj (uden elektronik og batterier)</li>
                             </ul>
-                            <img class="plastinfo" src="images/plast.png" alt="Plast Infografik." title="Plast Infografik." />
+                            <div id="overlay1" onclick="off1()">
+                                <div class="zoombox" >Plast Infografik<br><br> <img class="zoomimage" alt="Plast Infografik" src="images/plast.png"> <br><br> <h2>Click anywhere to exit</h2> </div>
+                            </div>
+                            <div>
+                                <img class="plastinfo" src="images/plast.png" alt="Plast Infografik." title="Plast Infografik." onclick="on1()" />
+                            </div>
                         </div>
                     </article>
                     <article id="oevrigt">
@@ -819,6 +824,14 @@
             var pageTracker = _gat._getTracker("UA-217470-8");
             pageTracker._trackPageview();
         } catch (err) {}
+    </script>
+    <script>
+        function on1() {
+            document.getElementById("overlay1").style.display = "block";
+        }
+        function off1() {
+            document.getElementById("overlay1").style.display = "none";
+        }
     </script>
     <script>
         var appInsights = window.appInsights || function(a) {
