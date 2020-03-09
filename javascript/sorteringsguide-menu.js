@@ -40,7 +40,7 @@ function showDisplay(id){
 	  var category = document.getElementById("glas");
 	  var display = topDisplay;
 	  var destination = indholdOverAffaldsorteringsIkoner;
-	  var color = '#378177';
+	  var color = '#29615A';
 	  break;
 	case 'metal-button':
 	  // vars
