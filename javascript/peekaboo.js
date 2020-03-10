@@ -11,3 +11,5 @@ function yScrollHandler() {
     }
 }
 window.onscroll = yScrollHandler;
+
+alert("NOTE: Dette er blot et studieprojekt og er kun ment som et mock-up eksempel på et alternativt udkast til en Subpage for OdenseRenovation. Du kan scrolle længere ned for at finde mere information om hjemmesiden.");

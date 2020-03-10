@@ -714,7 +714,13 @@ ul.examples_of_what_to_do li a {
 
 .indsats h3:before {
     content: "";
-    clip-path: polygon(25% 3%, 40% 5%, 60% 5%, 75% 3%, 90% 0, 100% 0, 100% 100%, 0 100%, 0 0, 10% 0);
+     clip-path: polygon(
+         25% 3%, 30% 4%, 40% 5%, 50% 5%, 60% 5%, 65% 4%, 75% 3%, 
+         90% 0,
+         100% 0, 100% 100%, 0 100%, 0 0,
+         10% 0);
+    
+    
     position: absolute;
     left: 92px;
     top: -50%;
